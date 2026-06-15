@@ -11,6 +11,24 @@ const SawanPackageGrid = () => {
   const normal = sawanPackages.filter((p) => p.kind === "normal");
   const heli = sawanPackages.filter((p) => p.kind === "helicopter");
 
+  // Mobile normal-packages carousel state
+  const normalScrollRef = useRef<HTMLDivElement>(null);
+  const [normalActive, setNormalActive] = useState(0);
+
+  const handleNormalScroll = () => {
+    const el = normalScrollRef.current;
+    if (!el) return;
+    const idx = Math.round(el.scrollLeft / el.clientWidth);
+    if (idx !== normalActive) setNormalActive(idx);
+  };
+
+  const scrollNormalTo = (i: number) => {
+    const el = normalScrollRef.current;
+    if (!el) return;
+    el.scrollTo({ left: i * el.clientWidth, behavior: "smooth" });
+  };
+
+
   // Carousel state
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleCards, setVisibleCards] = useState(3); // default desktop
