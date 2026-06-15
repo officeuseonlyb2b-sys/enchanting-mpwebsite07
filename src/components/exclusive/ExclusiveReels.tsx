@@ -1,66 +1,82 @@
 import { motion } from "framer-motion";
-import { MapPin } from "lucide-react";
-import { memo, useEffect, useMemo, useRef, useState } from "react";
+import { MapPin, Pause, Play } from "lucide-react";
+import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { SawanCampaign } from "@/data/exclusive/sawanData";
 import { useAutoScroll } from "@/hooks/useAutoScroll";
 import { useInViewport } from "@/hooks/useInViewport";
 
 // ============================================================
-// VIDEO (no white flash, lazy loading, no black layer)
+// VIDEO — poster always visible (no white flash), inline play/pause
 // ============================================================
 const ReelVideo = memo(
   ({
     reel,
     isHovered,
     shouldLoad,
+    playing,
+    onTogglePlay,
   }: {
     reel: SawanCampaign["reels"][number];
     isHovered: boolean;
     shouldLoad: boolean;
+    playing: boolean;
+    onTogglePlay: () => void;
   }) => {
     const videoRef = useRef<HTMLVideoElement>(null);
     const [loaded, setLoaded] = useState(false);
 
-    // Play / pause on hover
+    // Drive playback from `playing` (hover on desktop, tap toggle on mobile)
     useEffect(() => {
       const v = videoRef.current;
       if (!v) return;
-      if (isHovered) {
+      if (playing) {
         v.play().catch(() => {});
       } else {
         v.pause();
       }
-    }, [isHovered]);
-
-    // Don't render any <video> until we're near the viewport
-    if (!shouldLoad) {
-      return <div className="absolute inset-0 bg-transparent" />;
-    }
+    }, [playing]);
 
     return (
       <>
-        {/* Loading shimmer – light gray, not black */}
-        {!loaded && (
-          <div className="absolute inset-0 bg-neutral-100 animate-pulse" />
-        )}
-        <video
-          ref={videoRef}
-          src={reel.videoUrl}
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          poster={reel.image} // fallback poster
-          onLoadedData={() => setLoaded(true)}
-          style={{
-            backgroundImage: `url(${reel.image})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-          className={`absolute inset-0 w-full h-full object-cover border-0 outline-none ring-0 transition-all duration-500 ${
-            loaded ? "opacity-100" : "opacity-0"
-          } ${isHovered ? "scale-100" : "scale-105"}`}
+        {/* Poster image always visible underneath — no white/gray overlay */}
+        <img
+          src={reel.image}
+          alt={reel.title}
+          loading="lazy"
+          decoding="async"
+          className={`absolute inset-0 w-full h-full object-cover transition-transform duration-500 ${
+            isHovered ? "scale-100" : "scale-105"
+          }`}
         />
+
+        {shouldLoad && (
+          <video
+            ref={videoRef}
+            src={reel.videoUrl}
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster={reel.image}
+            onLoadedData={() => setLoaded(true)}
+            className={`absolute inset-0 w-full h-full object-cover border-0 outline-none ring-0 transition-opacity duration-500 ${
+              loaded && playing ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        )}
+
+        {/* Play / Pause control */}
+        <button
+          type="button"
+          onClick={(e) => {
+            e.stopPropagation();
+            onTogglePlay();
+          }}
+          aria-label={playing ? "Pause reel" : "Play reel"}
+          className="absolute bottom-3 right-3 z-20 grid place-items-center w-10 h-10 rounded-full bg-black/45 hover:bg-black/65 text-white backdrop-blur-sm transition-all active:scale-95"
+        >
+          {playing ? <Pause size={16} fill="white" /> : <Play size={16} fill="white" />}
+        </button>
       </>
     );
   }
@@ -80,7 +96,10 @@ const ReelCard = memo(
     index: number;
   }) => {
     const [hovered, setHovered] = useState(false);
+    const [userPlaying, setUserPlaying] = useState(false);
     const { ref: viewRef, inView } = useInViewport<HTMLDivElement>("400px");
+
+    const playing = hovered || userPlaying;
 
     return (
       <motion.div
@@ -90,8 +109,6 @@ const ReelCard = memo(
         transition={{ delay: Math.min(index, 6) * 0.04 }}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        onTouchStart={() => setHovered(true)}
-        onTouchEnd={() => setHovered(false)}
         style={{
           outline: "none",
           border: "none",
@@ -105,7 +122,14 @@ const ReelCard = memo(
           {/* MEDIA CONTAINER – no black background */}
           <div className="relative h-[460px] sm:h-[380px] md:h-[450px] overflow-hidden rounded-[24px] border-none outline-none ring-0 shadow-none bg-transparent">
             {/* LAZY VIDEO */}
-            <ReelVideo reel={reel} isHovered={hovered} shouldLoad={inView} />
+            <ReelVideo
+              reel={reel}
+              isHovered={hovered}
+              shouldLoad={inView}
+              playing={playing}
+              onTogglePlay={() => setUserPlaying((p) => !p)}
+            />
+
 
             {/* BLACK GRADIENT OVERLAY REMOVED – video now fully visible */}
 
