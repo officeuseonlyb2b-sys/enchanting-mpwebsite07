@@ -233,7 +233,7 @@ const ExclusiveReels = ({ reels }: Props) => {
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
             onScroll={handleScroll}
-            className="overflow-x-auto no-scrollbar py-4"
+            className="overflow-x-auto no-scrollbar py-4 snap-x snap-mandatory md:snap-none scroll-smooth"
           >
             <div className="flex gap-5 w-max items-center">
               {sliderData.map((reel, i) => (
