@@ -107,6 +107,9 @@ const ExclusiveSawanPage = () => {
       </main>
 
       <Footer />
+
+      {/* Mobile-only sticky enquiry FAB + auto-open popup */}
+      <SawanMobileEnquireFab />
     </div>
   );
 };
