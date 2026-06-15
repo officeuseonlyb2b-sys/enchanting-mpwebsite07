@@ -33,6 +33,7 @@ interface Props {
 }
 
 const ExclusiveIntro = ({ intro }: Props) => {
+  const [expanded, setExpanded] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
   const [autoScrollActive, setAutoScrollActive] = useState(true);
   const inactivityTimer = useRef<NodeJS.Timeout | null>(null);
