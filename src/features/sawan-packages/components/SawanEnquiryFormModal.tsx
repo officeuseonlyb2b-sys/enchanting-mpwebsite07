@@ -143,11 +143,11 @@ const SacredEnquiryFormModal = ({ open, onClose }: Props) => {
         phone: values.mobile,
         destination: "Ujjain & Omkareshwar",
         travelDate: values.travelDate,
-        travelers: `${values.adults} adults, ${values.children} children`,
+        travelers: `${adultsCount} adults, ${childrenCount} children`,
         message: values.additionalRequests,
         extraFields: {
           City: values.city,
-          "Children Ages": values.childrenAges,
+          "Children Ages": childrenAges,
           Enhancements: enhancements,
         },
         autoReplyTemplate: "sawan-auto-reply",
