@@ -96,7 +96,10 @@ const ReelCard = memo(
     index: number;
   }) => {
     const [hovered, setHovered] = useState(false);
+    const [userPlaying, setUserPlaying] = useState(false);
     const { ref: viewRef, inView } = useInViewport<HTMLDivElement>("400px");
+
+    const playing = hovered || userPlaying;
 
     return (
       <motion.div
@@ -106,8 +109,6 @@ const ReelCard = memo(
         transition={{ delay: Math.min(index, 6) * 0.04 }}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        onTouchStart={() => setHovered(true)}
-        onTouchEnd={() => setHovered(false)}
         style={{
           outline: "none",
           border: "none",
@@ -121,7 +122,14 @@ const ReelCard = memo(
           {/* MEDIA CONTAINER – no black background */}
           <div className="relative h-[460px] sm:h-[380px] md:h-[450px] overflow-hidden rounded-[24px] border-none outline-none ring-0 shadow-none bg-transparent">
             {/* LAZY VIDEO */}
-            <ReelVideo reel={reel} isHovered={hovered} shouldLoad={inView} />
+            <ReelVideo
+              reel={reel}
+              isHovered={hovered}
+              shouldLoad={inView}
+              playing={playing}
+              onTogglePlay={() => setUserPlaying((p) => !p)}
+            />
+
 
             {/* BLACK GRADIENT OVERLAY REMOVED – video now fully visible */}
 
