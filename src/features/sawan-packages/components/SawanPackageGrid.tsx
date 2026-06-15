@@ -123,7 +123,7 @@ const SawanPackageGrid = () => {
               <button
                 onClick={handlePrev}
                 disabled={!canPrev}
-                className={`absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 backdrop-blur-sm rounded-full p-2 shadow-lg border border-gray-200 transition-all -ml-4 lg:-ml-6 ${
+                className={`absolute left-1 sm:-ml-4 lg:-ml-6 sm:left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 backdrop-blur-sm rounded-full p-2 shadow-lg border border-gray-200 transition-all ${
                   !canPrev
                     ? "opacity-40 cursor-not-allowed"
                     : "hover:bg-white"
