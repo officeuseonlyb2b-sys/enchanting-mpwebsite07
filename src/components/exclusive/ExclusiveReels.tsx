@@ -98,12 +98,12 @@ const ReelCard = memo(
           boxShadow: "none",
           WebkitTapHighlightColor: "transparent",
         }}
-        className="reel-card w-[180px] sm:w-[250px] md:w-[280px] flex-shrink-0 focus:outline-none focus:ring-0"
+        className="reel-card w-[85vw] max-w-[320px] sm:w-[250px] sm:max-w-none md:w-[280px] flex-shrink-0 focus:outline-none focus:ring-0 snap-start"
       >
         {/* Removed bg-black from outer group; using transparent background */}
         <div className="group relative overflow-hidden rounded-[24px] bg-transparent border-none outline-none ring-0 shadow-none">
           {/* MEDIA CONTAINER – no black background */}
-          <div className="relative h-[320px] sm:h-[380px] md:h-[450px] overflow-hidden rounded-[24px] border-none outline-none ring-0 shadow-none bg-transparent">
+          <div className="relative h-[460px] sm:h-[380px] md:h-[450px] overflow-hidden rounded-[24px] border-none outline-none ring-0 shadow-none bg-transparent">
             {/* LAZY VIDEO */}
             <ReelVideo reel={reel} isHovered={hovered} shouldLoad={inView} />
 
@@ -194,7 +194,7 @@ const ExclusiveReels = ({ reels }: Props) => {
   };
 
   return (
-    <section className="relative py-12 sm:py-16 md:py-28 overflow-hidden bg-white">
+    <section id="sawan-reels" className="relative py-12 sm:py-16 md:py-28 overflow-hidden bg-white">
       {/* Decorative rings – unchanged */}
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full border border-orange-300" />
@@ -233,7 +233,7 @@ const ExclusiveReels = ({ reels }: Props) => {
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
             onScroll={handleScroll}
-            className="overflow-x-auto no-scrollbar py-4"
+            className="overflow-x-auto no-scrollbar py-4 snap-x snap-mandatory md:snap-none scroll-smooth"
           >
             <div className="flex gap-5 w-max items-center">
               {sliderData.map((reel, i) => (
