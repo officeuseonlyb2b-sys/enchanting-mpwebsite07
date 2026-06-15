@@ -98,12 +98,12 @@ const ReelCard = memo(
           boxShadow: "none",
           WebkitTapHighlightColor: "transparent",
         }}
-        className="reel-card w-[180px] sm:w-[250px] md:w-[280px] flex-shrink-0 focus:outline-none focus:ring-0"
+        className="reel-card w-[85vw] max-w-[320px] sm:w-[250px] sm:max-w-none md:w-[280px] flex-shrink-0 focus:outline-none focus:ring-0 snap-start"
       >
         {/* Removed bg-black from outer group; using transparent background */}
         <div className="group relative overflow-hidden rounded-[24px] bg-transparent border-none outline-none ring-0 shadow-none">
           {/* MEDIA CONTAINER – no black background */}
-          <div className="relative h-[320px] sm:h-[380px] md:h-[450px] overflow-hidden rounded-[24px] border-none outline-none ring-0 shadow-none bg-transparent">
+          <div className="relative h-[460px] sm:h-[380px] md:h-[450px] overflow-hidden rounded-[24px] border-none outline-none ring-0 shadow-none bg-transparent">
             {/* LAZY VIDEO */}
             <ReelVideo reel={reel} isHovered={hovered} shouldLoad={inView} />
 
