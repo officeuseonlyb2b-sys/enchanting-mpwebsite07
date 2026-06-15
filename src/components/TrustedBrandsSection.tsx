@@ -73,7 +73,7 @@ export default function TrustedBrandsSection() {
         </div>
 
         {/* LOGO SLIDER */}
-        <div className="relative flex-1 overflow-hidden py-0">
+        <div className="relative w-full md:flex-1 overflow-hidden py-0">
           
           {/* LEFT FADE */}
           <div className="absolute left-0 top-0 z-10 h-full w-14 bg-gradient-to-r from-white via-white to-transparent" />
