@@ -12,6 +12,7 @@ import {
 } from "@/components/exclusive";
 import { sawanCampaign } from "@/data/exclusive/sawanData";
 import { SawanPackageGrid } from "@/features/sawan-packages";
+import SawanMobileEnquireFab from "@/features/sawan-packages/components/SawanMobileEnquireFab";
 
 // ✅ Your existing image – confirmed to exist
 import formBackgroundImg from "@/assets/shravan/formbackgroundimg.jpeg";
