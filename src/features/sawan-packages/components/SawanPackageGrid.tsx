@@ -70,10 +70,43 @@ const SawanPackageGrid = () => {
           title="Choose Your Shravan Journey"
           subtitle=""
         />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
+        {/* Normal Packages — grid on desktop, swipeable carousel on mobile */}
+        <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
           {normal.map((p, i) => (
             <SawanPackageCard key={p.id} pkg={p} index={i} />
           ))}
+        </div>
+
+        {/* Mobile-only swipe carousel */}
+        <div className="sm:hidden -mx-4">
+          <div
+            ref={normalScrollRef}
+            onScroll={handleNormalScroll}
+            className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar scroll-smooth px-4 gap-4 pb-2"
+          >
+            {normal.map((p, i) => (
+              <div
+                key={p.id}
+                className="snap-center shrink-0 basis-[90%]"
+              >
+                <SawanPackageCard pkg={p} index={i} />
+              </div>
+            ))}
+          </div>
+          {normal.length > 1 && (
+            <div className="flex justify-center gap-2 mt-5">
+              {normal.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => scrollNormalTo(i)}
+                  aria-label={`Go to package ${i + 1}`}
+                  className={`h-2 rounded-full transition-all ${
+                    i === normalActive ? "w-6 bg-[#FF7A00]" : "w-2 bg-gray-300"
+                  }`}
+                />
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Helicopter Packages - Carousel with fixed visible cards */}
@@ -85,7 +118,7 @@ const SawanPackageGrid = () => {
               subtitle="Helicopter packages for a divine aerial journey"
             />
 
-            <div className="relative">
+            <div className="relative px-2 sm:px-0">
               {/* Left Arrow */}
               <button
                 onClick={handlePrev}
