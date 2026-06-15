@@ -230,4 +230,56 @@ const SectionTitle = ({
   </motion.div>
 );
 
+const HeliMobileCarousel = ({
+  items,
+}: {
+  items: ReturnType<typeof sawanPackages.filter>;
+}) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const [active, setActive] = useState(0);
+
+  const onScroll = () => {
+    const el = ref.current;
+    if (!el) return;
+    const idx = Math.round(el.scrollLeft / el.clientWidth);
+    if (idx !== active) setActive(idx);
+  };
+
+  const scrollTo = (i: number) => {
+    const el = ref.current;
+    if (!el) return;
+    el.scrollTo({ left: i * el.clientWidth, behavior: "smooth" });
+  };
+
+  return (
+    <>
+      <div
+        ref={ref}
+        onScroll={onScroll}
+        className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar scroll-smooth px-4 gap-4 pb-2"
+      >
+        {items.map((pkg, i) => (
+          <div key={pkg.id} className="snap-center shrink-0 basis-[90%]">
+            <SawanPackageCard pkg={pkg} index={i} />
+          </div>
+        ))}
+      </div>
+      {items.length > 1 && (
+        <div className="flex justify-center gap-2 mt-5">
+          {items.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => scrollTo(i)}
+              aria-label={`Go to package ${i + 1}`}
+              className={`h-2 rounded-full transition-all ${
+                i === active ? "w-6 bg-[#FF7A00]" : "w-2 bg-gray-300"
+              }`}
+            />
+          ))}
+        </div>
+      )}
+    </>
+  );
+};
+
 export default SawanPackageGrid;
