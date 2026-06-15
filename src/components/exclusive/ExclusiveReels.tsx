@@ -194,7 +194,7 @@ const ExclusiveReels = ({ reels }: Props) => {
   };
 
   return (
-    <section className="relative py-12 sm:py-16 md:py-28 overflow-hidden bg-white">
+    <section id="sawan-reels" className="relative py-12 sm:py-16 md:py-28 overflow-hidden bg-white">
       {/* Decorative rings – unchanged */}
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full border border-orange-300" />
