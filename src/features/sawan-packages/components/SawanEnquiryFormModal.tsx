@@ -147,7 +147,7 @@ const SacredEnquiryFormModal = ({ open, onClose }: Props) => {
         message: values.additionalRequests,
         extraFields: {
           City: values.city,
-          "Children Ages": childrenAges,
+          "Children Ages": childrenAges.map(a => a !== null ? String(a) : "?").join(", "),
           Enhancements: enhancements,
         },
         autoReplyTemplate: "sawan-auto-reply",
