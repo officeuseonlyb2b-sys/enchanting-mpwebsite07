@@ -136,6 +136,9 @@ export async function submitForm(
       },
     });
 
+    // Meta Pixel Lead event — fired only after a successful submission
+    trackMetaLead(idempotencyBase);
+
     return { ok: true };
   } catch (err: any) {
     console.error("Form submission failed:", err);
