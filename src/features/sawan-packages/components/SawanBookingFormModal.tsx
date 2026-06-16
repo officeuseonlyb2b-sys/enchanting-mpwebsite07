@@ -252,21 +252,30 @@ const SawanBookingFormModal = ({ open, onClose }: Props) => {
             onClick={(e) => e.stopPropagation()}
             className="relative bg-[#FFFBF3] w-full md:max-w-3xl md:rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-screen md:max-h-[92vh]"
           >
-            {/* Header */}
-            <div className="relative bg-gradient-to-r from-[#7a1f00] via-[#a13502] to-[#d97706] text-white px-5 py-4 flex items-center justify-between flex-shrink-0">
-              <div>
-                <p className="text-orange-200 uppercase tracking-[0.3em] text-[10px]">
-                  ॐ Plan Your Divine Yatra
+            {/* Hero Header (image banner matching booking page) */}
+            <div className="relative flex-shrink-0 overflow-hidden">
+              <img
+                src="https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607210/formbackgroundimg_b5lx32.jpg"
+                alt="Begin Your Sacred Journey"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/25" />
+              <div className="relative px-5 sm:px-7 py-6 sm:py-8 text-white">
+                <p className="nav-font text-orange-300 uppercase tracking-[0.3em] text-[10px] sm:text-[11px] mb-2">
+                  ॐ PLAN YOUR DIVINE YATRA
                 </p>
-                <h2 className="font-display text-lg sm:text-xl leading-tight mt-0.5">
+                <h2 className="font-display text-2xl sm:text-3xl leading-tight max-w-md">
                   Begin Your Sacred Journey
                 </h2>
+                <p className="mt-2 text-white/85 text-xs sm:text-sm max-w-md leading-relaxed">
+                  Our Yatra Experts will help you choose the right package, darshan options, travel dates and accommodation.
+                </p>
               </div>
               <button
                 type="button"
                 onClick={onClose}
                 aria-label="Close"
-                className="w-9 h-9 rounded-full bg-white/15 hover:bg-white/25 grid place-items-center transition active:scale-95"
+                className="absolute top-3 right-3 w-9 h-9 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur grid place-items-center text-white transition active:scale-95 z-10"
               >
                 <X size={18} />
               </button>
