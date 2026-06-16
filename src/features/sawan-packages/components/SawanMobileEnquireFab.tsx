@@ -143,7 +143,7 @@ const SawanMobileEnquireFab = () => {
         <span>Enquire Now</span>
       </button>
 
-      <SacredEnquiryFormModal open={open} onClose={() => setOpen(false)} />
+      <SawanBookingFormModal open={open} onClose={() => setOpen(false)} />
     </>
   );
 };
