@@ -2,70 +2,48 @@ import { motion } from "framer-motion";
 import { MapPin, Pause, Play } from "lucide-react";
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { SawanCampaign } from "@/data/exclusive/sawanData";
-import { useAutoScroll } from "@/hooks/useAutoScroll";
 import { useInViewport } from "@/hooks/useInViewport";
 
 // ============================================================
-// VIDEO — poster always visible (no white flash), inline play/pause
+// VIDEO – no overlays, stops on scroll
 // ============================================================
 const ReelVideo = memo(
   ({
     reel,
-    isHovered,
     shouldLoad,
     playing,
     onTogglePlay,
   }: {
     reel: SawanCampaign["reels"][number];
-    isHovered: boolean;
     shouldLoad: boolean;
     playing: boolean;
     onTogglePlay: () => void;
   }) => {
     const videoRef = useRef<HTMLVideoElement>(null);
-    const [loaded, setLoaded] = useState(false);
 
-    // Drive playback from `playing` (hover on desktop, tap toggle on mobile)
+    // Play/pause based on the "playing" prop (which accounts for scroll)
     useEffect(() => {
       const v = videoRef.current;
       if (!v) return;
-      if (playing) {
+      if (playing && shouldLoad) {
         v.play().catch(() => {});
       } else {
         v.pause();
       }
-    }, [playing]);
+    }, [playing, shouldLoad]);
 
     return (
       <>
-        {/* Poster image always visible underneath — no white/gray overlay */}
-        <img
-          src={reel.image}
-          alt={reel.title}
-          loading="lazy"
-          decoding="async"
-          className={`absolute inset-0 w-full h-full object-cover transition-transform duration-500 ${
-            isHovered ? "scale-100" : "scale-105"
-          }`}
+        <video
+          ref={videoRef}
+          src={reel.videoUrl}
+          muted
+          loop
+          playsInline
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover border-0 outline-none ring-0"
         />
 
-        {shouldLoad && (
-          <video
-            ref={videoRef}
-            src={reel.videoUrl}
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            poster={reel.image}
-            onLoadedData={() => setLoaded(true)}
-            className={`absolute inset-0 w-full h-full object-cover border-0 outline-none ring-0 transition-opacity duration-500 ${
-              loaded && playing ? "opacity-100" : "opacity-0"
-            }`}
-          />
-        )}
-
-        {/* Play / Pause control */}
         <button
           type="button"
           onClick={(e) => {
@@ -85,21 +63,34 @@ const ReelVideo = memo(
 ReelVideo.displayName = "ExclusiveReelVideo";
 
 // ============================================================
-// CARD – black layers completely removed
+// CARD – playing respects scroll state
 // ============================================================
 const ReelCard = memo(
   ({
     reel,
     index,
+    isScrolling, // ← new prop: global scroll flag
   }: {
     reel: SawanCampaign["reels"][number];
     index: number;
+    isScrolling: boolean;
   }) => {
     const [hovered, setHovered] = useState(false);
     const [userPlaying, setUserPlaying] = useState(false);
     const { ref: viewRef, inView } = useInViewport<HTMLDivElement>("400px");
 
-    const playing = hovered || userPlaying;
+    // Video plays only if NOT scrolling AND (hovered OR user clicked play)
+    const playing = !isScrolling && (hovered || userPlaying);
+
+    // When scrolling starts, any manually playing video is overridden
+    // (but we keep userPlaying state – it will resume when scrolling stops + hover)
+    // Optional: reset userPlaying when scrolling starts to avoid unexpected resume
+    useEffect(() => {
+      if (isScrolling) {
+        // If you want to also clear the manual "play" flag on scroll, uncomment next line:
+        // setUserPlaying(false);
+      }
+    }, [isScrolling]);
 
     return (
       <motion.div
@@ -117,23 +108,16 @@ const ReelCard = memo(
         }}
         className="reel-card w-[85vw] max-w-[320px] sm:w-[250px] sm:max-w-none md:w-[280px] flex-shrink-0 focus:outline-none focus:ring-0 snap-start"
       >
-        {/* Removed bg-black from outer group; using transparent background */}
         <div className="group relative overflow-hidden rounded-[24px] bg-transparent border-none outline-none ring-0 shadow-none">
-          {/* MEDIA CONTAINER – no black background */}
           <div className="relative h-[460px] sm:h-[380px] md:h-[450px] overflow-hidden rounded-[24px] border-none outline-none ring-0 shadow-none bg-transparent">
-            {/* LAZY VIDEO */}
             <ReelVideo
               reel={reel}
-              isHovered={hovered}
               shouldLoad={inView}
               playing={playing}
               onTogglePlay={() => setUserPlaying((p) => !p)}
             />
 
-
-            {/* BLACK GRADIENT OVERLAY REMOVED – video now fully visible */}
-
-            {/* TITLE (top) – remains, but no black layer behind it */}
+            {/* Title (top) */}
             <div
               className={`absolute top-6 left-1/2 -translate-x-1/2 text-center px-4 w-full transition-all duration-500 pointer-events-none ${
                 hovered
@@ -146,7 +130,7 @@ const ReelCard = memo(
               </h3>
             </div>
 
-            {/* CATEGORY / TAG (bottom) – no black overlay */}
+            {/* Tag (bottom) */}
             <div
               className={`absolute bottom-10 left-1/2 -translate-x-1/2 text-center transition-all duration-500 pointer-events-none ${
                 hovered
@@ -160,7 +144,7 @@ const ReelCard = memo(
             </div>
           </div>
 
-          {/* LOCATION BAR (below video) – unchanged, white background */}
+          {/* Location bar */}
           <div className="bg-white py-4 px-3 text-center border-none outline-none ring-0 shadow-none">
             <div className="flex items-center justify-center gap-2 text-black">
               <MapPin size={14} />
@@ -178,55 +162,113 @@ const ReelCard = memo(
 ReelCard.displayName = "ExclusiveReelCard";
 
 // ============================================================
-// MAIN SECTION – unchanged, only reel cards are fixed
+// MAIN SECTION – infinite auto‑scroll + scroll detection to stop videos
 // ============================================================
 interface Props {
   reels: SawanCampaign["reels"];
 }
 
 const ExclusiveReels = ({ reels }: Props) => {
-  // Triple the data for infinite smooth scroll
-  const sliderData = useMemo(
-    () => [...reels, ...reels, ...reels],
-    [reels]
+  // Triple the data for infinite seamless scroll
+  const sliderData = useMemo(() => [...reels, ...reels, ...reels], [reels]);
+
+  const containerRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
+  const animFrameRef = useRef<number | null>(null);
+  const lastTimeRef = useRef<number | null>(null);
+  const oneSetWidthRef = useRef(0);
+  const speedRef = useRef(50); // pixels per second
+  const [isHovered, setIsHovered] = useState(false);   // pauses auto‑scroll on hover
+  const [isScrolling, setIsScrolling] = useState(false); // true while user scrolls → videos pause
+
+  // ---- measure one set width (the width of a single copy) ----
+  const measureSetWidth = useCallback(() => {
+    if (!trackRef.current) return;
+    const trackWidth = trackRef.current.scrollWidth;
+    oneSetWidthRef.current = trackWidth / 3;
+  }, []);
+
+  useEffect(() => {
+    measureSetWidth();
+    const observer = new ResizeObserver(measureSetWidth);
+    if (trackRef.current) observer.observe(trackRef.current);
+    return () => observer.disconnect();
+  }, [measureSetWidth, reels]);
+
+  // ---- animation loop (only when NOT hovered) ----
+  const animate = useCallback(
+    (timestamp: number) => {
+      if (!lastTimeRef.current) lastTimeRef.current = timestamp;
+      const delta = (timestamp - lastTimeRef.current) / 1000; // seconds
+      lastTimeRef.current = timestamp;
+
+      const el = containerRef.current;
+      if (!el || isHovered || oneSetWidthRef.current === 0) {
+        // If hovered, we don't move – the user scrolls manually
+        animFrameRef.current = requestAnimationFrame(animate);
+        return;
+      }
+
+      // Move scrollLeft smoothly
+      el.scrollLeft += speedRef.current * delta;
+
+      // Seamless reset (both changes happen in the same frame, no visual jump)
+      const maxScroll = oneSetWidthRef.current * 2;
+      if (el.scrollLeft >= maxScroll) {
+        el.scrollLeft -= oneSetWidthRef.current;
+      } else if (el.scrollLeft <= 0) {
+        el.scrollLeft += oneSetWidthRef.current;
+      }
+
+      animFrameRef.current = requestAnimationFrame(animate);
+    },
+    [isHovered]
   );
 
-  // Auto‑scroll on mouse hover
-  const { ref, onMouseEnter, onMouseLeave } =
-    useAutoScroll<HTMLDivElement>(50);
-
-  // Start from the middle copy
   useEffect(() => {
-    const el = ref.current;
-    if (!el || reels.length === 0) return;
-    requestAnimationFrame(() => {
-      el.scrollLeft = el.scrollWidth / 3;
-    });
-  }, [reels]);
+    animFrameRef.current = requestAnimationFrame(animate);
+    return () => {
+      if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current);
+    };
+  }, [animate]);
 
-  // Keep the loop seamless
-  const handleScroll = () => {
-    const el = ref.current;
-    if (!el) return;
-    const oneSet = el.scrollWidth / 3;
-    if (el.scrollLeft >= oneSet * 2) {
-      el.scrollLeft = oneSet;
-    }
-    if (el.scrollLeft <= 0) {
-      el.scrollLeft = oneSet;
-    }
-  };
+  // ---- mouse handlers: pause auto‑scroll on hover ----
+  const handleMouseEnter = useCallback(() => setIsHovered(true), []);
+  const handleMouseLeave = useCallback(() => setIsHovered(false), []);
+
+  // ---- scroll detection: while user scrolls, videos stop ----
+  const handleScroll = useCallback(() => {
+    // Set scrolling flag true
+    setIsScrolling(true);
+    // Clear any existing timeout
+    if (window.scrollTimeout) clearTimeout(window.scrollTimeout);
+    // After 200ms of no scroll events, reset scrolling flag
+    window.scrollTimeout = setTimeout(() => {
+      setIsScrolling(false);
+    }, 200);
+  }, []);
+
+  // Attach scroll listener to the container (for manual scroll)
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+    container.addEventListener("scroll", handleScroll);
+    return () => {
+      container.removeEventListener("scroll", handleScroll);
+      if (window.scrollTimeout) clearTimeout(window.scrollTimeout);
+    };
+  }, [handleScroll]);
 
   return (
     <section id="sawan-reels" className="relative py-12 sm:py-16 md:py-28 overflow-hidden bg-white">
-      {/* Decorative rings – unchanged */}
+      {/* Decorative rings */}
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full border border-orange-300" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-orange-400" />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
-        {/* Heading – unchanged */}
+        {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -246,25 +288,25 @@ const ExclusiveReels = ({ reels }: Props) => {
           </div>
         </motion.div>
 
-        {/* Slider */}
+        {/* Slider – hover pauses auto‑scroll, scrolling pauses all videos */}
         {reels.length === 0 ? (
           <p className="text-center text-orange-800/70 py-10">
             No reels available for this campaign.
           </p>
         ) : (
           <div
-            ref={ref}
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-            onScroll={handleScroll}
-            className="overflow-x-auto no-scrollbar py-4 snap-x snap-mandatory md:snap-none scroll-smooth"
+            ref={containerRef}
+            className="overflow-x-auto no-scrollbar py-4"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
           >
-            <div className="flex gap-5 w-max items-center">
+            <div ref={trackRef} className="flex gap-5 w-max">
               {sliderData.map((reel, i) => (
                 <ReelCard
                   key={`${reel.id}-${i}`}
                   reel={reel}
                   index={i}
+                  isScrolling={isScrolling}
                 />
               ))}
             </div>
@@ -274,5 +316,12 @@ const ExclusiveReels = ({ reels }: Props) => {
     </section>
   );
 };
+
+// TypeScript helper for the scroll timeout (cleaner)
+declare global {
+  interface Window {
+    scrollTimeout?: NodeJS.Timeout;
+  }
+}
 
 export default ExclusiveReels;
