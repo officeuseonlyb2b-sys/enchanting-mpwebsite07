@@ -1,17 +1,31 @@
 // data/packages.ts
 import type { SawanPackage } from "../types";
-import helicopter1 from "@/assets/shravan/helicopter1.webp";
-import helicopter2 from "@/assets/shravan/helicopter2.webp";
-import helicopter3 from "@/assets/shravan/helicopter3.webp";
-import helicopter4 from "@/assets/shravan/helicopter4.webp";
-import helicopter5 from "@/assets/shravan/helicopter5.webp";
+// Cloudinary Images
 
-// Normal package 
+const helicopter1 =
+  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607211/helicopter1_hfgdle.webp";
 
-import normalpkg1 from "@/assets/shravan/normalpkg1.webp"
-import normalpkg2 from "@/assets/shravan/normalpkg2.webp"
-import normalpkg3 from "@/assets/shravan/normalpkg3.webp"
+const helicopter2 =
+  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607212/helicopter2_eoxpte.webp";
 
+const helicopter3 =
+  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607213/helicopter3_csh8it.webp";
+
+const helicopter4 =
+  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607213/helicopter4_pfqvbv.webp";
+
+const helicopter5 =
+  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607214/helicopter5_lhdn2k.webp";
+
+
+const normalpkg1 =
+  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607215/normalpkg1_ymmkxt.webp";
+
+const normalpkg2 =
+  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607216/normalpkg2_euryf8.webp";
+
+const normalpkg3 =
+  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607216/normalpkg3_s6q6j4.webp";
 
 
 const COMMON_EXCLUSIONS = [
@@ -46,7 +60,7 @@ const mahakaalBlessings: SawanPackage = {
   startingPrice: "From ₹23,000",
   image: normalpkg1,
   description:
-    "A curated 3‑day Sawan pilgrimage covering Mahakaleshwar and Omkareshwar Jyotirlingas with VVIP darshan, evening aartis and Indore heritage.",
+    "A curated 3‑day Sawan pilgrimage covering Mahakaleshwar and Omkareshwar Jyotirlingas with VVIP darshan, evening aartis and Indore heritage .",
   highlights: [
     "The Kingdom of Mahakaal, where ancient spirituality reigns supreme, beckoning travelers with its sacred shrines and mystical allure.",
     "Harsiddhi Mata Temple Aarti: A mesmerizing spectacle of devotion and reverence, illuminating hearts with the divine energy of the sacred ritual.",
@@ -105,7 +119,7 @@ const mahakaalBlessings: SawanPackage = {
       ],
     },
     {
-      hotelCategory: "03 Star Deluxe Hotel",
+      hotelCategory: "03 Star Deluxe Hote l",
       variants: [
         { vehicle: "AC Sedan Car", pax: 2, cost: 29500 },
         { vehicle: "Innova Crysta", pax: 4, cost: 24500 },
@@ -161,7 +175,7 @@ const divineJyotirlinga: SawanPackage = {
   ],
   inclusions: [
     "Meeting and assistance on arrival/departure at Airport/hotel by our representative.",
-    "Accommodation for Total 03 nights on sharing basis on Room plus breakfast on fixed menu/buffet basis. Except In Maheshwar where the stay is on MAPAI plan/Half board that is with breakfast lunch & Dinner on Fixed menu Buffet Basis.",
+    "Accommodation for Total 03 nights on sharing basis on Room plus breakfast on fixed menu/buffet basis. Except In Maheshwar where the stay is on MAPAI plan/Half board that is with breakfast & Dinner on Fixed menu Buffet Basis.",
     "Total 03 Breakfast & 01 Dinner as mentioned in the program.",
     "Arrival / Departure transfers, sightseeing/ excursions and surface travel as per the above program by Air‑Conditioned Vehicle.",
     "Enjoy a scenic boat ride on the Narmada River, offering beautiful views of Maheshwar Fort.",
@@ -216,7 +230,7 @@ const divineJyotirlinga: SawanPackage = {
     {
       hotelCategory: "03 Star Hotel",
       variants: [
-        { vehicle: "AC Sedan Car", pax: 2, cost: 36000 },
+        { vehicle: "AC Sedan Car", pax: 2, cost: 36100 },
         { vehicle: "Innova Crysta", pax: 4, cost: 29600 },
         { vehicle: "Tempo Traveller", pax: 6, cost: 28700 },
       ],
@@ -224,9 +238,9 @@ const divineJyotirlinga: SawanPackage = {
     {
       hotelCategory: "03 Star Deluxe Hotel",
       variants: [
-        { vehicle: "AC Sedan Car", pax: 2, cost: 35300 },
-        { vehicle: "Innova Crysta", pax: 4, cost: 28800 },
-        { vehicle: "Tempo Traveller", pax: 6, cost: 27900 },
+        { vehicle: "AC Sedan Car", pax: 2, cost: 37600 },
+        { vehicle: "Innova Crysta", pax: 4, cost: 31100 },
+        { vehicle: "Tempo Traveller", pax: 6, cost: 30200 },
       ],
     },
     {
@@ -280,8 +294,8 @@ const jyotirlingaMonsoonEscape: SawanPackage = {
   ],
   inclusions: [
     "Meeting and assistance on arrival/departure at Airport/hotel by our representative.",
-    "Accommodation for Total 04 nights on sharing basis on Room plus breakfast on fixed menu/buffet basis. Except In Maheshwar where the stay is on MAPAI plan/Half board that is with breakfast lunch & Dinner on Fixed menu Buffet Basis.",
-    "Total 03 Breakfast & 01 Dinner as mentioned in the program.",
+    "Accommodation for Total 04 nights on sharing basis on Room plus breakfast on fixed menu/buffet basis. Except In Maheshwar where the stay is on MAPAI plan/Half board that is with breakfast & Dinner on Fixed menu Buffet Basis.",
+    "Total 04 Breakfast & 01 Dinner as mentioned in the program.",
     "Arrival / Departure transfers, sightseeing/ excursions and surface travel as per the above program by Air‑Conditioned Vehicle.",
     "Enjoy a scenic boat ride on the Narmada River, offering beautiful views of Maheshwar Fort.",
     "All monument entrance including VVIP Darshan at Mahakaleshwar Temple in Ujjain & Omkar Mandhata Temple in Omkareshwar & VIP Entry Ticket In Kaal Bhairav Temple In Ujjain.",
@@ -344,25 +358,25 @@ const jyotirlingaMonsoonEscape: SawanPackage = {
     {
       hotelCategory: "03 Star Hotel",
       variants: [
-        { vehicle: "AC Sedan Car", pax: 2, cost: 40500 },
-        { vehicle: "Innova Crysta", pax: 4, cost: 32800 },
-        { vehicle: "Tempo Traveller", pax: 6, cost: 31800 },
+        { vehicle: "AC Sedan Car", pax: 2, cost: 42500 },
+        { vehicle: "Innova Crysta", pax: 4, cost: 34800 },
+        { vehicle: "Tempo Traveller", pax: 6, cost: 33800 },
       ],
     },
     {
       hotelCategory: "03 Star Deluxe Hotel",
       variants: [
-        { vehicle: "AC Sedan Car", pax: 2, cost: 41700 },
-        { vehicle: "Innova Crysta", pax: 4, cost: 34000 },
-        { vehicle: "Tempo Traveller", pax: 6, cost: 33000 },
+        { vehicle: "AC Sedan Car", pax: 2, cost: 43900 },
+        { vehicle: "Innova Crysta", pax: 4, cost: 36300 },
+        { vehicle: "Tempo Traveller", pax: 6, cost: 35300 },
       ],
     },
     {
       hotelCategory: "04 Star Hotel",
       variants: [
-        { vehicle: "AC Sedan Car", pax: 2, cost: 47500 },
-        { vehicle: "Innova Crysta", pax: 4, cost: 39500 },
-        { vehicle: "Tempo Traveller", pax: 6, cost: 38500 },
+        { vehicle: "AC Sedan Car", pax: 2, cost: 47600 },
+        { vehicle: "Innova Crysta", pax: 4, cost: 39700 },
+        { vehicle: "Tempo Traveller", pax: 6, cost: 38600 },
       ],
     },
   ],
@@ -483,8 +497,8 @@ const heliSpiritual: SawanPackage = {
   ],
   inclusions: [
     "Meeting and assistance on arrival/departure at Airport/hotel by our representative.",
-    "Accommodation for Total 01 nights on sharing basis on Room plus breakfast on fixed menu/buffet basis.",
-    "Total 01 Breakfast as mentioned in the program.",
+    "Accommodation for Total 01 nights on sharing basis on Room plus breakfast,lunch,dinner on fixed menu/buffet basis.",
+    "Total 01 Breakfast, 01 Lunch, 01 Dinner as mentioned in the program.",
     "Arrival / Departure transfers, sightseeing/ excursions and surface travel as per the above program by Air‑Conditioned Vehicle.",
     "Experience VVIP Darshan at Mahakaleshwar Temple in Ujjain.",
     "Enjoy VIP entry ticket in Kaal Bhairav Temple In Ujjain.",
@@ -502,7 +516,7 @@ const heliSpiritual: SawanPackage = {
         "Upon arrival at Indore Airport, you will be warmly welcomed by our company representative and driven to Ujjain, “The Kingdom of Mahakaal.” Upon arrival in Ujjain, transfer to the hotel and check‑in at the hotels.\n\n" +
         "Begin your sightseeing tour with a visit to the historic Sandipani Ashram, followed by the serene Mangal Nath Temple. Continue to the famous Kaal Bhairav Temple, renowned for its unique ritual of offering liquor to the deity.\n\n" +
         "Later, explore the spiritual ambiance and beautiful heritage of the city before visiting the sacred Ram Ghat, situated on the banks of the holy Shipra River. Thereafter, visit the revered Harsiddhi Mata Temple, known for its divine atmosphere and magnificent architecture.\n\n" +
-        "In the evening, experience the grandeur of the newly developed Mahakaal Corridor, followed by VVIP Darshan at Shri Mahakaleshwar Temple near the Garbh Grah Gate. Witness the divine Sandhya Aarti experience before returning to the hotel. Overnight stay at Ujjain.\n\nMeals NA",
+        "In the evening, experience the grandeur of the newly developed Mahakaal Corridor, followed by VVIP Darshan at Shri Mahakaleshwar Temple near the Garbh Grah Gate. Witness the divine Sandhya Aarti experience before returning to the hotel. Overnight stay at Ujjain.\n\nMeals: Lunch,Dinner",
     },
     {
       day: "Day 2",
@@ -568,8 +582,8 @@ const heliDivine: SawanPackage = {
   ],
   inclusions: [
     "Meeting and assistance on arrival/departure at Airport/hotel by our representative.",
-    "Accommodation for Total 02 nights on sharing basis on Room plus breakfast on fixed menu/buffet basis.",
-    "Total 02 Breakfasts as mentioned in the program.",
+    "Accommodation for Total 02 nights on sharing basis on Room plus breakfast on fixed menu/buffet basis.Except in Ujjain, where the stay is on APAI basis, inclusive of breakfast, lunch, and dinner on a fixed menu buffet basis.",
+    "Total 02 Breakfasts, 01 Lunch, 01 Dinner as mentioned in the program.",
     "Arrival / Departure transfers, sightseeing/ excursions and surface travel as per the above program by Air‑Conditioned Vehicle.",
     "Experience VVIP Darshan at Mahakaleshwar Temple in Ujjain.",
     "Enjoy VIP entry ticket in Kaal Bhairav Temple In Ujjain.",
@@ -587,7 +601,7 @@ const heliDivine: SawanPackage = {
         "Upon arrival at Indore airport, you will be warmly welcomed by our company representative and driven to Ujjain, “The Kingdom of Mahakaal.” Upon arrival in Ujjain, transfer to the hotel and check‑in at the hotels.\n\n" +
         "Begin your sightseeing tour with a visit to the historic Sandipani Ashram, followed by the serene Mangal Nath Temple. Continue to the famous Kaal Bhairav Temple, renowned for its unique ritual of offering liquor to the deity.\n\n" +
         "Later, explore the spiritual ambiance and beautiful heritage of the city before visiting the sacred Ram Ghat, situated on the banks of the holy Shipra River. Thereafter, visit the revered Harsiddhi Mata Temple, known for its divine atmosphere and magnificent architecture.\n\n" +
-        "In the evening, experience the grandeur of the newly developed Mahakaal Corridor, followed by VVIP Darshan at Shri Mahakaleshwar Temple near the Garbh Grah Gate. Witness the divine Sandhya Aarti experience before returning to the hotel. Overnight stay at Ujjain.\n\nMeals NA",
+        "In the evening, experience the grandeur of the newly developed Mahakaal Corridor, followed by VVIP Darshan at Shri Mahakaleshwar Temple near the Garbh Grah Gate. Witness the divine Sandhya Aarti experience before returning to the hotel. Overnight stay at Ujjain.\n\nMeals: Lunch,Dinner",
     },
     {
       day: "Day 2",
