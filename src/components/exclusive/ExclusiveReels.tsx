@@ -92,8 +92,10 @@ const ReelCard = memo(
     const [userPlaying, setUserPlaying] = useState(false);
     const { ref: viewRef, inView } = useInViewport<HTMLDivElement>("400px");
 
-    // Video plays only if NOT scrolling AND (hovered OR user clicked play)
-    const playing = !isScrolling && (hovered || userPlaying);
+    // User's explicit play tap takes priority over scroll-pause.
+    // Hover-play still respects scroll state on desktop.
+    const playing = userPlaying || (!isScrolling && hovered);
+
 
     // When scrolling starts, any manually playing video is overridden
     // (but we keep userPlaying state – it will resume when scrolling stops + hover)
