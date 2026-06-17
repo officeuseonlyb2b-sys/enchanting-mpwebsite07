@@ -27,23 +27,35 @@ const ReelVideo = memo(
       const v = videoRef.current;
       if (!v) return;
       if (playing && shouldLoad) {
-        v.play().catch(() => {});
+        const p = v.play();
+        if (p && typeof p.catch === "function") p.catch(() => {});
       } else {
-        v.pause();
+        try { v.pause(); } catch { /* noop */ }
       }
     }, [playing, shouldLoad]);
+
+    // Pause on unmount to avoid React removeChild issues from media elements
+    useEffect(() => {
+      const v = videoRef.current;
+      return () => {
+        if (v) {
+          try { v.pause(); v.removeAttribute("src"); v.load(); } catch { /* noop */ }
+        }
+      };
+    }, []);
 
     return (
       <>
         <video
           ref={videoRef}
-          src={reel.videoUrl}
+          src={shouldLoad ? reel.videoUrl : undefined}
           muted
           loop
           playsInline
-          preload="auto"
+          preload="metadata"
           className="absolute inset-0 w-full h-full object-cover border-0 outline-none ring-0"
         />
+
 
         <button
           type="button"
