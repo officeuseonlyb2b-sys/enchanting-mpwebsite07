@@ -205,8 +205,9 @@ const ExclusiveReels = ({ reels }: Props) => {
   const measureSetWidth = useCallback(() => {
     if (!trackRef.current) return;
     const trackWidth = trackRef.current.scrollWidth;
-    oneSetWidthRef.current = trackWidth / 3;
-  }, []);
+    // On mobile we render a single set; otherwise three copies for the seamless loop.
+    oneSetWidthRef.current = trackWidth / (isMobile ? 1 : 3);
+  }, [isMobile]);
 
   useEffect(() => {
     measureSetWidth();
@@ -215,7 +216,7 @@ const ExclusiveReels = ({ reels }: Props) => {
     return () => observer.disconnect();
   }, [measureSetWidth, reels]);
 
-  // ---- animation loop (only when NOT hovered) ----
+  // ---- animation loop (only when NOT hovered and NOT mobile) ----
   const animate = useCallback(
     (timestamp: number) => {
       if (!lastTimeRef.current) lastTimeRef.current = timestamp;
@@ -224,7 +225,6 @@ const ExclusiveReels = ({ reels }: Props) => {
 
       const el = containerRef.current;
       if (!el || isHovered || oneSetWidthRef.current === 0) {
-        // If hovered, we don't move – the user scrolls manually
         animFrameRef.current = requestAnimationFrame(animate);
         return;
       }
@@ -246,11 +246,18 @@ const ExclusiveReels = ({ reels }: Props) => {
   );
 
   useEffect(() => {
+    // Disable auto-scroll completely on mobile — users navigate manually via swipe/arrows.
+    if (isMobile) return;
+    lastTimeRef.current = null;
     animFrameRef.current = requestAnimationFrame(animate);
     return () => {
-      if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current);
+      if (animFrameRef.current) {
+        cancelAnimationFrame(animFrameRef.current);
+        animFrameRef.current = null;
+      }
     };
-  }, [animate]);
+  }, [animate, isMobile]);
+
 
   // ---- mouse handlers: pause auto‑scroll on hover ----
   const handleMouseEnter = useCallback(() => setIsHovered(true), []);
