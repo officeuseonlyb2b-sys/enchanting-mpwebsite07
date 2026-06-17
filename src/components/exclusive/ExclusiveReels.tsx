@@ -184,8 +184,12 @@ interface Props {
 }
 
 const ExclusiveReels = ({ reels }: Props) => {
-  // Triple the data for infinite seamless scroll
-  const sliderData = useMemo(() => [...reels, ...reels, ...reels], [reels]);
+  const isMobile = useIsMobile();
+  // On mobile we don't auto-scroll, so a single set is enough (saves memory & DOM nodes).
+  const sliderData = useMemo(
+    () => (isMobile ? [...reels] : [...reels, ...reels, ...reels]),
+    [reels, isMobile]
+  );
 
   const containerRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
@@ -195,6 +199,7 @@ const ExclusiveReels = ({ reels }: Props) => {
   const speedRef = useRef(50); // pixels per second
   const [isHovered, setIsHovered] = useState(false);   // pauses auto‑scroll on hover
   const [isScrolling, setIsScrolling] = useState(false); // true while user scrolls → videos pause
+
 
   // ---- measure one set width (the width of a single copy) ----
   const measureSetWidth = useCallback(() => {
