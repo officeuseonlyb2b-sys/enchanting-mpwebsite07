@@ -3,6 +3,7 @@ import { MapPin, Pause, Play } from "lucide-react";
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { SawanCampaign } from "@/data/exclusive/sawanData";
 import { useInViewport } from "@/hooks/useInViewport";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 // ============================================================
 // VIDEO – no overlays, stops on scroll
