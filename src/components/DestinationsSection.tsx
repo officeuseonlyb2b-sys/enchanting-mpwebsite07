@@ -1,12 +1,12 @@
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { memo, useMemo, useRef } from "react";
 import { Link } from "react-router-dom";
 import { MapPin, ArrowRight } from "lucide-react";
 import { destinations } from "@/data/destinations";
 import { useFilters } from "@/contexts/FilterContext";
 import destinationsBg from "@/assets/destinations-bg.png";
 
-const DestinationCard = ({ dest, index }: { dest: typeof destinations[0]; index: number }) => {
+const DestinationCard = memo(({ dest, index }: { dest: typeof destinations[0]; index: number }) => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-50px" });
 
