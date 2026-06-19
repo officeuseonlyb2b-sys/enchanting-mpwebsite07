@@ -68,10 +68,17 @@ const DestinationsSection = () => {
   const titleInView = useInView(titleRef, { once: true });
   const { selectedFilters, isAll: isGlobalAll } = useFilters();
 
-  
-  const filtered = isGlobalAll
-    ? destinations
-    : destinations.filter(d => d.category.some(c => selectedFilters.includes(c as any)));
+
+  const filtered = useMemo(
+    () =>
+      isGlobalAll
+        ? destinations
+        : destinations.filter((d) =>
+            d.category.some((c) => selectedFilters.includes(c as any)),
+          ),
+    [isGlobalAll, selectedFilters],
+  );
+
 
   return (
     <section id="destinations" className="relative py-20 md:py-28 overflow-hidden bg-white">
