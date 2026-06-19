@@ -60,7 +60,8 @@ const DestinationCard = memo(({ dest, index }: { dest: typeof destinations[0]; i
       </Link>
     </motion.div>
   );
-};
+});
+DestinationCard.displayName = "DestinationCard";
 
 const DestinationsSection = () => {
   const titleRef = useRef(null);
