@@ -339,10 +339,8 @@ const ExclusiveReels = ({ reels }: Props) => {
                     reel={reel}
                     index={i}
                     playing={activeKey === key}
-                    onTogglePlay={() =>
-                      setActiveKey((prev) => (prev === key ? null : key))
-                    }
-                    videoSrc={cldVideo(reel.videoUrl, { w: pickVideoWidth(isMobile) })}
+                    onTogglePlay={getToggleHandler(key)}
+                    videoSrc={videoSrcs[i]}
                   />
                 );
               })}
