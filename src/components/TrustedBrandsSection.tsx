@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { ShieldCheck } from "lucide-react";
 
 const brands = [
