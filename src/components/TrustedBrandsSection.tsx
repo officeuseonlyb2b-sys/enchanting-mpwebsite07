@@ -52,25 +52,15 @@ export default function TrustedBrandsSection() {
           </div>
         </div>
 
-        {/* LOGO SLIDER */}
+        {/* LOGO SLIDER - manual horizontal scroll, no auto-marquee */}
         <div className="relative w-full md:flex-1 overflow-hidden py-0">
           {/* LEFT FADE */}
-          <div className="absolute left-0 top-0 z-10 h-full w-14 bg-gradient-to-r from-white via-white to-transparent" />
+          <div className="absolute left-0 top-0 z-10 h-full w-14 bg-gradient-to-r from-white via-white to-transparent pointer-events-none" />
           {/* RIGHT FADE */}
-          <div className="absolute right-0 top-0 z-10 h-full w-14 bg-gradient-to-l from-white via-white to-transparent" />
+          <div className="absolute right-0 top-0 z-10 h-full w-14 bg-gradient-to-l from-white via-white to-transparent pointer-events-none" />
 
-          <motion.div
-            className="flex items-center gap-10 w-max"
-            animate={{
-              x: ["0%", "-50%"],
-            }}
-            transition={{
-              duration: 60,
-              repeat: Infinity,
-              ease: "linear",
-            }}
-          >
-            {[...brands, ...brands].map((logo, index) => {
+          <div className="flex items-center gap-10 w-max overflow-x-auto no-scrollbar">
+            {brands.map((logo, index) => {
               const originalIndex = index % brands.length;
 
               return (
@@ -100,7 +90,7 @@ export default function TrustedBrandsSection() {
                 </div>
               );
             })}
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
