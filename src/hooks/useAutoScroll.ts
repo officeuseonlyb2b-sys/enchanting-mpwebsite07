@@ -23,6 +23,8 @@ export function useAutoScroll<T extends HTMLDivElement>(speed = 60) {
 
     let raf = 0;
     let last = performance.now();
+    let inView = true;
+    let tabVisible = typeof document === "undefined" ? true : !document.hidden;
 
     const tick = (now: number) => {
       const dt = (now - last) / 1000;
@@ -35,7 +37,43 @@ export function useAutoScroll<T extends HTMLDivElement>(speed = 60) {
       }
       raf = requestAnimationFrame(tick);
     };
-    raf = requestAnimationFrame(tick);
+
+    const startLoop = () => {
+      if (raf) return;
+      last = performance.now();
+      raf = requestAnimationFrame(tick);
+    };
+    const stopLoop = () => {
+      if (raf) {
+        cancelAnimationFrame(raf);
+        raf = 0;
+      }
+    };
+    const sync = () => {
+      if (inView && tabVisible) startLoop();
+      else stopLoop();
+    };
+
+    let io: IntersectionObserver | null = null;
+    if (typeof IntersectionObserver !== "undefined") {
+      inView = false;
+      io = new IntersectionObserver(
+        (entries) => {
+          for (const e of entries) inView = e.isIntersecting;
+          sync();
+        },
+        { rootMargin: "200px" },
+      );
+      io.observe(el);
+    }
+
+    const onVis = () => {
+      tabVisible = !document.hidden;
+      sync();
+    };
+    document.addEventListener("visibilitychange", onVis);
+
+    sync();
 
     // Drag-to-scroll
     let isDown = false;
