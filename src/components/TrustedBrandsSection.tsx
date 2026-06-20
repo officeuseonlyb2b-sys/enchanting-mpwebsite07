@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { ShieldCheck } from "lucide-react";
 
 const brands = [
@@ -19,6 +20,7 @@ const brands = [
   "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781763226/brand14_qhwu9q.png",
   "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781763226/brand15_uqwfei.png",
 ];
+
 
 export default function TrustedBrandsSection() {
   return (
@@ -51,15 +53,25 @@ export default function TrustedBrandsSection() {
           </div>
         </div>
 
-        {/* LOGO SLIDER - manual horizontal scroll, no auto-marquee */}
+        {/* LOGO SLIDER */}
         <div className="relative w-full md:flex-1 overflow-hidden py-0">
           {/* LEFT FADE */}
-          <div className="absolute left-0 top-0 z-10 h-full w-14 bg-gradient-to-r from-white via-white to-transparent pointer-events-none" />
+          <div className="absolute left-0 top-0 z-10 h-full w-14 bg-gradient-to-r from-white via-white to-transparent" />
           {/* RIGHT FADE */}
-          <div className="absolute right-0 top-0 z-10 h-full w-14 bg-gradient-to-l from-white via-white to-transparent pointer-events-none" />
+          <div className="absolute right-0 top-0 z-10 h-full w-14 bg-gradient-to-l from-white via-white to-transparent" />
 
-          <div className="flex items-center gap-10 w-max overflow-x-auto no-scrollbar">
-            {brands.map((logo, index) => {
+          <motion.div
+            className="flex items-center gap-10 w-max"
+            animate={{
+              x: ["0%", "-50%"],
+            }}
+            transition={{
+              duration: 60,
+              repeat: Infinity,
+              ease: "linear",
+            }}
+          >
+            {[...brands, ...brands].map((logo, index) => {
               const originalIndex = index % brands.length;
 
               return (
@@ -89,7 +101,7 @@ export default function TrustedBrandsSection() {
                 </div>
               );
             })}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
