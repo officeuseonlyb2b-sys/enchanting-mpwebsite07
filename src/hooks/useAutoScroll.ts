@@ -119,7 +119,9 @@ export function useAutoScroll<T extends HTMLDivElement>(speed = 60) {
     el.addEventListener("wheel", onWheel, { passive: true });
 
     return () => {
-      cancelAnimationFrame(raf);
+      stopLoop();
+      io?.disconnect();
+      document.removeEventListener("visibilitychange", onVis);
       el.removeEventListener("pointerdown", onDown);
       el.removeEventListener("pointermove", onMove);
       el.removeEventListener("pointerup", onUp);
