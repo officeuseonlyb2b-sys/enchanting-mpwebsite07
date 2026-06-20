@@ -49,18 +49,8 @@ const ReelsGrid = ({ reels }: Props) => {
           {/* Gradient Fade Right */}
           <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-background to-transparent z-10" />
 
-          <motion.div
-            className="flex gap-6 w-max"
-            animate={{
-              x: ["0%", "-50%"],
-            }}
-            transition={{
-              duration: 30,
-              ease: "linear",
-              repeat: Infinity,
-            }}
-          >
-            {[...reels, ...reels].map((reel, i) => (
+          <div className="flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory">
+            {reels.map((reel, i) => (
               <motion.div
                 key={i}
                 whileHover={{ scale: 1.05, y: -8 }}
