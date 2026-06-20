@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 import imgGetaway from "@/assets/travel-getaway.jpg";
 import imgWomen from "@/assets/travel-women.jpg";
