@@ -95,14 +95,14 @@ const ReelsGrid = ({ reels }: Props) => {
                   </motion.div>
                 </div>
 
-                {/* Shine Effect */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition">
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-[shine_2s_linear_infinite]" />
+                {/* Shine Effect - hover only, no infinite animation */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition pointer-events-none">
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
                 </div>
 
               </motion.div>
             ))}
-          </motion.div>
+          </div>
 
         </div>
 
