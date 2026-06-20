@@ -200,11 +200,6 @@ const ExclusiveReels = ({ reels }: Props) => {
 
   const containerRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
-  const animFrameRef = useRef<number | null>(null);
-  const lastTimeRef = useRef<number | null>(null);
-  const oneSetWidthRef = useRef(0);
-  const speedRef = useRef(50);
-  const [isHovered, setIsHovered] = useState(false);
 
   // Single active reel — guarantees only one plays at a time.
   // Key includes index so duplicated reels (desktop loop) are unique.
@@ -223,96 +218,8 @@ const ExclusiveReels = ({ reels }: Props) => {
     return h;
   }, []);
 
-  const measureSetWidth = useCallback(() => {
-    if (!trackRef.current) return;
-    const trackWidth = trackRef.current.scrollWidth;
-    oneSetWidthRef.current = trackWidth / (isMobile ? 1 : 3);
-  }, [isMobile]);
-
-  useEffect(() => {
-    measureSetWidth();
-    const observer = new ResizeObserver(measureSetWidth);
-    if (trackRef.current) observer.observe(trackRef.current);
-    return () => observer.disconnect();
-  }, [measureSetWidth, reels]);
-
-  const animate = useCallback(
-    (timestamp: number) => {
-      if (!lastTimeRef.current) lastTimeRef.current = timestamp;
-      const delta = (timestamp - lastTimeRef.current) / 1000;
-      lastTimeRef.current = timestamp;
-
-      const el = containerRef.current;
-      if (!el || isHovered || activeKey || oneSetWidthRef.current === 0) {
-        animFrameRef.current = requestAnimationFrame(animate);
-        return;
-      }
-
-      el.scrollLeft += speedRef.current * delta;
-      const maxScroll = oneSetWidthRef.current * 2;
-      if (el.scrollLeft >= maxScroll) {
-        el.scrollLeft -= oneSetWidthRef.current;
-      } else if (el.scrollLeft <= 0) {
-        el.scrollLeft += oneSetWidthRef.current;
-      }
-
-      animFrameRef.current = requestAnimationFrame(animate);
-    },
-    [isHovered, activeKey]
-  );
-
-  useEffect(() => {
-    if (isMobile) return; // No auto-scroll on mobile.
-    const el = containerRef.current;
-    if (!el) return;
-
-    let inView = true;
-    let tabVisible = !document.hidden;
-
-    const start = () => {
-      if (animFrameRef.current != null) return;
-      lastTimeRef.current = null;
-      animFrameRef.current = requestAnimationFrame(animate);
-    };
-    const stop = () => {
-      if (animFrameRef.current != null) {
-        cancelAnimationFrame(animFrameRef.current);
-        animFrameRef.current = null;
-      }
-    };
-    const sync = () => {
-      if (inView && tabVisible) start();
-      else stop();
-    };
-
-    let io: IntersectionObserver | null = null;
-    if (typeof IntersectionObserver !== "undefined") {
-      inView = false;
-      io = new IntersectionObserver(
-        (entries) => {
-          for (const e of entries) inView = e.isIntersecting;
-          sync();
-        },
-        { rootMargin: "200px" },
-      );
-      io.observe(el);
-    }
-    const onVis = () => {
-      tabVisible = !document.hidden;
-      sync();
-    };
-    document.addEventListener("visibilitychange", onVis);
-    sync();
-
-    return () => {
-      stop();
-      io?.disconnect();
-      document.removeEventListener("visibilitychange", onVis);
-    };
-  }, [animate, isMobile]);
-
-  const handleMouseEnter = useCallback(() => setIsHovered(true), []);
-  const handleMouseLeave = useCallback(() => setIsHovered(false), []);
+  const handleMouseEnter = useCallback(() => {}, []);
+  const handleMouseLeave = useCallback(() => {}, []);
 
   // Pause whatever is playing when the user scrolls the page.
   useEffect(() => {
