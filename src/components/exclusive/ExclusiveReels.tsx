@@ -184,11 +184,8 @@ interface Props {
 
 const ExclusiveReels = ({ reels }: Props) => {
   const isMobile = useIsMobile();
-  // Mobile: render a single set (no infinite auto-scroll).
-  const sliderData = useMemo(
-    () => (isMobile ? [...reels] : [...reels, ...reels, ...reels]),
-    [reels, isMobile]
-  );
+  // Manual horizontal scroll only — render a single set on all viewports.
+  const sliderData = useMemo(() => [...reels], [reels]);
 
   // Precompute video sources once per slider/mobile change so each ReelCard
   // receives a stable string prop and React.memo can short-circuit re-renders.
