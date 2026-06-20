@@ -263,13 +263,51 @@ const ExclusiveReels = ({ reels }: Props) => {
 
   useEffect(() => {
     if (isMobile) return; // No auto-scroll on mobile.
-    lastTimeRef.current = null;
-    animFrameRef.current = requestAnimationFrame(animate);
-    return () => {
-      if (animFrameRef.current) {
+    const el = containerRef.current;
+    if (!el) return;
+
+    let inView = true;
+    let tabVisible = !document.hidden;
+
+    const start = () => {
+      if (animFrameRef.current != null) return;
+      lastTimeRef.current = null;
+      animFrameRef.current = requestAnimationFrame(animate);
+    };
+    const stop = () => {
+      if (animFrameRef.current != null) {
         cancelAnimationFrame(animFrameRef.current);
         animFrameRef.current = null;
       }
+    };
+    const sync = () => {
+      if (inView && tabVisible) start();
+      else stop();
+    };
+
+    let io: IntersectionObserver | null = null;
+    if (typeof IntersectionObserver !== "undefined") {
+      inView = false;
+      io = new IntersectionObserver(
+        (entries) => {
+          for (const e of entries) inView = e.isIntersecting;
+          sync();
+        },
+        { rootMargin: "200px" },
+      );
+      io.observe(el);
+    }
+    const onVis = () => {
+      tabVisible = !document.hidden;
+      sync();
+    };
+    document.addEventListener("visibilitychange", onVis);
+    sync();
+
+    return () => {
+      stop();
+      io?.disconnect();
+      document.removeEventListener("visibilitychange", onVis);
     };
   }, [animate, isMobile]);
 
