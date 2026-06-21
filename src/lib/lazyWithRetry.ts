@@ -94,7 +94,16 @@ export function lazyWithRetry<T extends ComponentType<any>>(
 ): PreloadableLazy<T> {
   const wrapped = wrapFactory(factory);
   let cached: Promise<{ default: T }> | null = null;
-  const load = () => (cached ??= wrapped());
+  const load = () => {
+    if (!cached) {
+      cached = wrapped().catch((err) => {
+        // Don't cache failures — next render attempt should retry the import.
+        cached = null;
+        throw err;
+      });
+    }
+    return cached;
+  };
 
   const Component = lazy(load) as PreloadableLazy<T>;
   Component.preload = () => load();
