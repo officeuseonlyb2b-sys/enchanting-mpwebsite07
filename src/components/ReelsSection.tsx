@@ -273,7 +273,7 @@ const ReelsSection = () => {
                     key={`${reel.id}-${i}`}
                     reel={reel}
                     index={i}
-                    videoSrc={cldVideo(reel.videoUrl, { w: videoWidth })}
+                    videoSrc={reel.videoUrl}
                   />
                 ))}
 
