@@ -8,7 +8,7 @@ import { useAutoScroll } from "@/hooks/useAutoScroll";
 import { useInViewport } from "@/hooks/useInViewport";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { getReelCategories, matchesFilters } from "@/lib/categoryMatch";
-import { cldVideo, pickVideoWidth } from "@/lib/cloudinary";
+
 
 // ============================================================
 // VIDEO (lazy-loaded when near viewport, no image fallback)
@@ -159,7 +159,7 @@ ReelCard.displayName = "ReelCard";
 const ReelsSection = () => {
   const { selectedFilters, isAll } = useFilters();
   const isMobile = useIsMobile();
-  const videoWidth = pickVideoWidth(isMobile);
+  void isMobile;
 
   const { ref, onMouseEnter, onMouseLeave } =
     useAutoScroll<HTMLDivElement>(50);
@@ -273,7 +273,7 @@ const ReelsSection = () => {
                     key={`${reel.id}-${i}`}
                     reel={reel}
                     index={i}
-                    videoSrc={cldVideo(reel.videoUrl, { w: videoWidth })}
+                    videoSrc={reel.videoUrl}
                   />
                 ))}
 

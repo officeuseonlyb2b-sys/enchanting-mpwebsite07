@@ -4,25 +4,25 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped to maiharattraction1..4
   maiharattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781776755/maiharattraction1_rsio9c.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/maiharattraction1_rsio9c.jpg",
   maiharattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781776755/maiharattraction2_hhovb5.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/maiharattraction2_hhovb5.jpg",
   maiharattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781776758/maiharattraction3_fzic79.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/maiharattraction3_fzic79.jpg",
   maiharattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781776759/maiharattraction4_zayylx.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/maiharattraction4_zayylx.jpg",
 
   // Gallery images – mapped to maihargallary1..5
   maihargallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781776763/maihargallary1_nmsuxg.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/maihargallary1_nmsuxg.jpg",
   maihargallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781776765/maihargallary2_armth9.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/maihargallary2_armth9.jpg",
   maihargallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781776768/maihargallary3_eubivi.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/maihargallary3_eubivi.jpg",
   maihargallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781776770/maihargallary4_xaht2s.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/maihargallary4_xaht2s.jpg",
   maihargallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781776774/maihargallary5_wswmbz.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/maihargallary5_wswmbz.jpg",
 };
 
 const maihar: DestinationContent = {

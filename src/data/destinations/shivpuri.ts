@@ -4,37 +4,37 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped to shivpuriattraction1..4
   shivpuriattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780811/shivpuriattraction1_nvdyrp.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/shivpuriattraction1_nvdyrp.jpg",
   shivpuriattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780813/shivpuriattraction2_rki1rd.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/shivpuriattraction2_rki1rd.jpg",
   shivpuriattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780818/shivpuriattraction3_lc3ov5.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/shivpuriattraction3_lc3ov5.jpg",
   shivpuriattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780821/shivpuriattraction4_udhh5u.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/shivpuriattraction4_udhh5u.jpg",
 
   // Gallery images – mapped to shivpurigallary1..9, 11, 12
   shivpurigallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780825/shivpurigallary1_ntlyok.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/shivpurigallary1_ntlyok.jpg",
   shivpurigallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780829/shivpurigallary2_du6ypt.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/shivpurigallary2_du6ypt.jpg",
   shivpurigallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780832/shivpurigallary3_flxj4y.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/shivpurigallary3_flxj4y.jpg",
   shivpurigallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780838/shivpurigallary4_rxaat1.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/shivpurigallary4_rxaat1.jpg",
   shivpurigallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780839/shivpurigallary5_gm8op7.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/shivpurigallary5_gm8op7.jpg",
   shivpurigallary6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780845/shivpurigallary6_ldqrlp.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/shivpurigallary6_ldqrlp.jpg",
   shivpurigallary7:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780847/shivpurigallary7_uacjrx.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/shivpurigallary7_uacjrx.jpg",
   shivpurigallary8:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780852/shivpurigallary8_umkwep.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/shivpurigallary8_umkwep.jpg",
   shivpurigallary9:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780856/shivpurigallary9_caiqug.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/shivpurigallary9_caiqug.jpg",
   shivpurigallary11:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780861/shivpurigallary11_riasvq.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/shivpurigallary11_riasvq.jpg",
   shivpurigallary12:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780862/shivpurigallary12_vg6nme.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/shivpurigallary12_vg6nme.jpg",
 };
 
 const shivpuri: DestinationContent = {

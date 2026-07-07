@@ -4,35 +4,35 @@ import type { DestinationContent } from "./types";
 const images = {
   // Gallery images (order from the provided list)
   gallery1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765358/bhedaghatgallary1_qag3uh.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhedaghatgallary1_qag3uh.jpg",
   gallery2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765358/bhedaghatgallary2_zqwryf.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhedaghatgallary2_zqwryf.jpg",
   gallery3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765359/bhedaghatgallary3_zu8vrb.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhedaghatgallary3_zu8vrb.jpg",
   gallery5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765359/bhedaghatgallary5_gmj7xt.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhedaghatgallary5_gmj7xt.jpg",
   gallery4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765360/bhedaghatgallary4_suyjcz.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhedaghatgallary4_suyjcz.jpg",
   gallery6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765362/bhedaghatgallary6_zerna4.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhedaghatgallary6_zerna4.jpg",
   gallery7:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765363/bhedaghatgallary7_gl4b17.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhedaghatgallary7_gl4b17.jpg",
   gallery8:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765364/bhedaghatgallary8_knrkox.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhedaghatgallary8_knrkox.jpg",
   gallery9:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765365/bhedaghatgallary9_bscvnu.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhedaghatgallary9_bscvnu.jpg",
   gallery10:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765366/bhedaghatgallary10_joqqdw.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhedaghatgallary10_joqqdw.jpg",
 
   // Attraction images (last four URLs)
   bhedaGhat:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765496/Jabalpur-Bheda-Ghat_zip2p7.webp",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/Jabalpur-Bheda-Ghat_zip2p7.webp",
   chausath:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765497/Jabalpur-Chausath-Yogini_d7ruhq.webp",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/Jabalpur-Chausath-Yogini_d7ruhq.webp",
   ropeway:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765498/Jabalpur-Dhuadhar-Ropeway_sr31ft.webp",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/Jabalpur-Dhuadhar-Ropeway_sr31ft.webp",
   dhuadhar:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765499/Jabalpur-Dhuadhar-Waterfall_zxbeib.webp",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/Jabalpur-Dhuadhar-Waterfall_zxbeib.webp",
 };
 
 const bhedaghat: DestinationContent = {

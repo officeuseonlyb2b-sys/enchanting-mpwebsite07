@@ -4,27 +4,27 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped to tawaattraction1..4
   tawaattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781580/tawaattraction1_k7s239.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/tawaattraction1_k7s239.jpg",
   tawaattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781583/tawaattraction2_vu2gue.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/tawaattraction2_vu2gue.jpg",
   tawaattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781588/tawaattraction3_avrcu4.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/tawaattraction3_avrcu4.jpg",
   tawaattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781591/tawaattraction4_gotist.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/tawaattraction4_gotist.jpg",
 
   // Gallery images – mapped by filename (tawagallary1..6)
   tawagallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781598/tawagallary1_lngia3.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/tawagallary1_lngia3.jpg",
   tawagallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781607/tawagallary2_a6aiki.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/tawagallary2_a6aiki.jpg",
   tawagallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781606/tawagallary3_k8pzh9.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/tawagallary3_k8pzh9.jpg",
   tawagallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781617/tawagallary4_hfylrp.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/tawagallary4_hfylrp.jpg",
   tawagallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781616/tawagallary5_szd5nh.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/tawagallary5_szd5nh.jpg",
   tawagallary6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781624/tawagallary6_dstjmz.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/tawagallary6_dstjmz.jpg",
 };
 
 const tawa: DestinationContent = {

@@ -4,25 +4,25 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped to the exact variable names
   hanuwantiyaattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769966/hanuwantiyaattraction1_p6hdjl.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/hanuwantiyaattraction1_p6hdjl.jpg",
   hanuwantiyaattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769966/hanuwantiyaattraction2_obrn0m.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/hanuwantiyaattraction2_obrn0m.jpg",
   hanuwantiyaattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769968/hanuwantiyaattraction3_dc0xis.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/hanuwantiyaattraction3_dc0xis.jpg",
   hanuwantiyaattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769970/hanuwantiyaattraction4_ejnlix.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/hanuwantiyaattraction4_ejnlix.jpg",
 
   // Gallery images – mapped to hanuwantiyagallary1..5
   hanuwantiyagallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769973/hanuwantiyagallary1_x6wnvm.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/hanuwantiyagallary1_x6wnvm.jpg",
   hanuwantiyagallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769976/hanuwantiyagallary2_k5dzh2.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/hanuwantiyagallary2_k5dzh2.jpg",
   hanuwantiyagallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769979/hanuwantiyagallary3_jtmnbp.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/hanuwantiyagallary3_jtmnbp.jpg",
   hanuwantiyagallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769978/hanuwantiyagallary4_exw26n.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/hanuwantiyagallary4_exw26n.jpg",
   hanuwantiyagallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769980/hanuwantiyagallary5_xggjbp.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/hanuwantiyagallary5_xggjbp.jpg",
 };
 
 const hanuwantiya: DestinationContent = {

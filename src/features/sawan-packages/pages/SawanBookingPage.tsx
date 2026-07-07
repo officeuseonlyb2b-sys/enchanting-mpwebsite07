@@ -33,7 +33,7 @@ import { submitForm } from "@/lib/submitForm";
 
 
 
-const formBackgroundImg = "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607210/formbackgroundimg_b5lx32.jpg";
+const formBackgroundImg = "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/formbackgroundimg_b5lx32.jpg";
 
 const WHATSAPP_NUMBER = "919109114934";
 const SUPPORT_PHONE = "+91 9109114934";

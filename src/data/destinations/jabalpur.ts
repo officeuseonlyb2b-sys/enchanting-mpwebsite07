@@ -4,39 +4,39 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped to the exact variable names
   jabalpurattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770453/jabalpurattraction1_dlpipk.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/jabalpurattraction1_dlpipk.jpg",
   jabalpurattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770454/jabalpurattraction2_zcktyn.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/jabalpurattraction2_zcktyn.jpg",
   jabalpurattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770455/jabalpurattraction3_rzvfas.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/jabalpurattraction3_rzvfas.jpg",
   jabalpurattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770457/jabalpurattraction4_btsy28.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/jabalpurattraction4_btsy28.jpg",
 
   // Gallery images – mapped to jabalpurgallary1..12
   jabalpurgallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770459/jabalpurgallary1_wducsg.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/jabalpurgallary1_wducsg.jpg",
   jabalpurgallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770460/jabalpurgallary2_uvxngw.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/jabalpurgallary2_uvxngw.jpg",
   jabalpurgallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770463/jabalpurgallary3_zknusp.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/jabalpurgallary3_zknusp.jpg",
   jabalpurgallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770465/jabalpurgallary4_xturlg.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/jabalpurgallary4_xturlg.jpg",
   jabalpurgallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770467/jabalpurgallary5_yw3yum.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/jabalpurgallary5_yw3yum.jpg",
   jabalpurgallary6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770469/jabalpurgallary6_cvecpf.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/jabalpurgallary6_cvecpf.jpg",
   jabalpurgallary7:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770471/jabalpurgallary7_ibvkrb.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/jabalpurgallary7_ibvkrb.jpg",
   jabalpurgallary8:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770472/jabalpurgallary8_brz3jq.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/jabalpurgallary8_brz3jq.jpg",
   jabalpurgallary9:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770474/jabalpurgallary9_htzdxe.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/jabalpurgallary9_htzdxe.jpg",
   jabalpurgallary10:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770476/jabalpurgallary10_rprza2.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/jabalpurgallary10_rprza2.jpg",
   jabalpurgallary11:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770478/jabalpurgallary11_ohb6ws.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/jabalpurgallary11_ohb6ws.jpg",
   jabalpurgallary12:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770480/jabalpurgallary12_zgtnkn.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/jabalpurgallary12_zgtnkn.jpg",
 };
 
 const jabalpur: DestinationContent = {

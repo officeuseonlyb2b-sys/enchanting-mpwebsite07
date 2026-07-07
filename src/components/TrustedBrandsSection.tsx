@@ -4,21 +4,21 @@ import { motion } from "framer-motion";
 import { ShieldCheck } from "lucide-react";
 
 const brands = [
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781763223/brand1_xvdn5p.png",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781763223/brand2_cinxmw.png",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781763225/brand3_xaqwff.png",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781763223/brand4_sssrov.png",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781763223/brand5_mqzffs.png",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781763224/brand6_sjykig.png",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781763223/brand7_xxnmnz.png",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781763225/brand8_ifscm8.png",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781763224/brand9_cthpkm.png",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781763224/brand10_midk4y.png",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781763225/brand11_znw7ye.png",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781763225/brand12_vvftjh.png",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781763225/brand13_liebdj.png",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781763226/brand14_qhwu9q.png",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781763226/brand15_uqwfei.png",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/brand1_xvdn5p.png",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/brand2_cinxmw.png",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/brand3_xaqwff.png",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/brand4_sssrov.png",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/brand5_mqzffs.png",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/brand6_sjykig.png",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/brand7_xxnmnz.png",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/brand8_ifscm8.png",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/brand9_cthpkm.png",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/brand10_midk4y.png",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/brand11_znw7ye.png",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/brand12_vvftjh.png",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/brand13_liebdj.png",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/brand14_qhwu9q.png",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/brand15_uqwfei.png",
 ];
 
 

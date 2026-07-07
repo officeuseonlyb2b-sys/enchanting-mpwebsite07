@@ -4,33 +4,33 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped to sanjaydubriattraction1..4
   sanjaydubriattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780294/sanjaydubriattraction1_e2ifrx.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sanjaydubriattraction1_e2ifrx.jpg",
   sanjaydubriattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780297/sanjaydubriattraction2_dx0ikn.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sanjaydubriattraction2_dx0ikn.jpg",
   sanjaydubriattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780300/sanjaydubriattraction3_j9avzm.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sanjaydubriattraction3_j9avzm.jpg",
   sanjaydubriattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780304/sanjaydubriattraction4_or8n9a.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sanjaydubriattraction4_or8n9a.jpg",
 
   // Gallery images – mapped to sanjaydubrigallary1..9
   sanjaydubrigallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780308/sanjaydubrigallary1_yqszh7.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sanjaydubrigallary1_yqszh7.jpg",
   sanjaydubrigallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780311/sanjaydubrigallary2_ysaycp.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sanjaydubrigallary2_ysaycp.jpg",
   sanjaydubrigallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780314/sanjaydubrigallary3_s829xb.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sanjaydubrigallary3_s829xb.jpg",
   sanjaydubrigallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780316/sanjaydubrigallary4_bizjcz.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sanjaydubrigallary4_bizjcz.jpg",
   sanjaydubrigallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780320/sanjaydubrigallary5_nprwo3.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sanjaydubrigallary5_nprwo3.jpg",
   sanjaydubrigallary6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780323/sanjaydubrigallary6_p6tidp.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sanjaydubrigallary6_p6tidp.jpg",
   sanjaydubrigallary7:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780325/sanjaydubrigallary7_rzc8jl.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sanjaydubrigallary7_rzc8jl.jpg",
   sanjaydubrigallary8:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780333/sanjaydubrigallary8_x8qvn7.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sanjaydubrigallary8_x8qvn7.jpg",
   sanjaydubrigallary9:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780336/sanjaydubrigallary9_o7vnue.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sanjaydubrigallary9_o7vnue.jpg",
 };
 
 const sanjaydubri: DestinationContent = {

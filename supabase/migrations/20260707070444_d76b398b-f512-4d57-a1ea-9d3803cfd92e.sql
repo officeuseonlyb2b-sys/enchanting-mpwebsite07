@@ -1,0 +1,2 @@
+CREATE POLICY "temp anon upload media" ON storage.objects FOR INSERT TO anon WITH CHECK (bucket_id = 'media');
+CREATE POLICY "temp anon update media" ON storage.objects FOR UPDATE TO anon USING (bucket_id = 'media') WITH CHECK (bucket_id = 'media');

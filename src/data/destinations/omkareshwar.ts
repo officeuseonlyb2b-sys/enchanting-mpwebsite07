@@ -4,39 +4,39 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped to omkareshwarattraction1..4
   omkareshwarattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777951/omkareshwarattraction1_y6henm.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/omkareshwarattraction1_y6henm.jpg",
   omkareshwarattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777955/omkareshwarattraction2_prqe8z.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/omkareshwarattraction2_prqe8z.jpg",
   omkareshwarattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777959/omkareshwarattraction3_dnowv3.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/omkareshwarattraction3_dnowv3.jpg",
   omkareshwarattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777960/omkareshwarattraction4_nccw4u.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/omkareshwarattraction4_nccw4u.jpg",
 
   // Gallery images – mapped to omkareshwargallary1..12
   omkareshwargallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777964/omkareshwargallary1_l1ymkg.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/omkareshwargallary1_l1ymkg.jpg",
   omkareshwargallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777968/omkareshwargallary2_qhslds.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/omkareshwargallary2_qhslds.jpg",
   omkareshwargallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777969/omkareshwargallary3_yadas4.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/omkareshwargallary3_yadas4.jpg",
   omkareshwargallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777973/omkareshwargallary4_kg9jmr.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/omkareshwargallary4_kg9jmr.jpg",
   omkareshwargallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777975/omkareshwargallary5_tvjcrz.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/omkareshwargallary5_tvjcrz.jpg",
   omkareshwargallary6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777980/omkareshwargallary6_vezqax.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/omkareshwargallary6_vezqax.jpg",
   omkareshwargallary7:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777982/omkareshwargallary7_kfpnzg.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/omkareshwargallary7_kfpnzg.jpg",
   omkareshwargallary8:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777983/omkareshwargallary8_awdhcv.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/omkareshwargallary8_awdhcv.jpg",
   omkareshwargallary9:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777988/omkareshwargallary9_p4jso7.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/omkareshwargallary9_p4jso7.jpg",
   omkareshwargallary10:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777990/omkareshwargallary10_rs30z0.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/omkareshwargallary10_rs30z0.jpg",
   omkareshwargallary11:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777993/omkareshwargallary11_qlpsxe.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/omkareshwargallary11_qlpsxe.jpg",
   omkareshwargallary12:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777995/omkareshwargallary12_nxoty4.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/omkareshwargallary12_nxoty4.jpg",
 };
 
 const omkareshwar: DestinationContent = {

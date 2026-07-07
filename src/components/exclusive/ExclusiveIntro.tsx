@@ -5,22 +5,22 @@ import type { SawanCampaign } from "@/data/exclusive/sawanData";
 
 // ========== CLOUDINARY IMAGE URLs (15 provided) ==========
 const aboutImages = [
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607203/about1_mzlta9.webp",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607204/about2_psbaaa.webp",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607206/about3_mts3bj.webp",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607204/about4_cmobty.webp",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607204/about5_xl6j34.webp",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607204/about6_wkuima.webp",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607205/about7_weyvk4.webp",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607205/about8_eyac6z.webp",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607205/about9_yfrif2.webp",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607205/about10_hha0q1.webp",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607205/about11_cpjluh.webp",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607206/about12_gsmk6p.webp",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607206/about13_skt7hd.webp",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607206/about14_tr2nwl.webp",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607208/about15_myk831.webp",
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607209/about16_mcumxb.webp",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/about1_mzlta9.webp",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/about2_psbaaa.webp",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/about3_mts3bj.webp",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/about4_cmobty.webp",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/about5_xl6j34.webp",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/about6_wkuima.webp",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/about7_weyvk4.webp",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/about8_eyac6z.webp",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/about9_yfrif2.webp",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/about10_hha0q1.webp",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/about11_cpjluh.webp",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/about12_gsmk6p.webp",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/about13_skt7hd.webp",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/about14_tr2nwl.webp",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/about15_myk831.webp",
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/about16_mcumxb.webp",
 ];
 
 interface Props {

@@ -4,39 +4,39 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped to ujjainattraction1..4
   ujjainattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781660/ujjainattraction1_nzkboi.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/ujjainattraction1_nzkboi.jpg",
   ujjainattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781664/ujjainattraction2_qvnbvl.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/ujjainattraction2_qvnbvl.jpg",
   ujjainattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781668/ujjainattraction3_tzefso.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/ujjainattraction3_tzefso.jpg",
   ujjainattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781671/ujjainattraction4_sjdowt.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/ujjainattraction4_sjdowt.jpg",
 
   // Gallery images – mapped to ujjaingallary1..12
   ujjaingallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781675/ujjaingallary1_w39auu.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/ujjaingallary1_w39auu.jpg",
   ujjaingallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781679/ujjaingallary2_pesjo6.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/ujjaingallary2_pesjo6.jpg",
   ujjaingallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781683/ujjaingallary3_fz3xi3.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/ujjaingallary3_fz3xi3.jpg",
   ujjaingallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781687/ujjaingallary4_rbskc6.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/ujjaingallary4_rbskc6.jpg",
   ujjaingallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781690/ujjaingallary5_uezjqs.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/ujjaingallary5_uezjqs.jpg",
   ujjaingallary6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781694/ujjaingallary6_bjrpft.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/ujjaingallary6_bjrpft.jpg",
   ujjaingallary7:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781698/ujjaingallary7_o2cwjc.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/ujjaingallary7_o2cwjc.jpg",
   ujjaingallary8:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781702/ujjaingallary8_opd8qr.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/ujjaingallary8_opd8qr.jpg",
   ujjaingallary9:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781705/ujjaingallary9_qrjqrp.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/ujjaingallary9_qrjqrp.jpg",
   ujjaingallary10:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781709/ujjaingallary10_jzkuqm.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/ujjaingallary10_jzkuqm.jpg",
   ujjaingallary11:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781713/ujjaingallary11_mupsdz.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/ujjaingallary11_mupsdz.jpg",
   ujjaingallary12:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781716/ujjaingallary12_ptiged.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/ujjaingallary12_ptiged.jpg",
 };
 
 const ujjain: DestinationContent = {

@@ -4,37 +4,37 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped by filename (attraction1, attraction2, attraction3, attraction4)
   attraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767266/burhanpurattraction1_cgj2zb.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/burhanpurattraction1_cgj2zb.jpg",
   attraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767266/burhanpurattraction2_gkgozf.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/burhanpurattraction2_gkgozf.jpg",
   attraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767266/burhanpurattraction3_df4o3t.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/burhanpurattraction3_df4o3t.jpg",
   attraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767267/burhanpurattraction4_gp1m4f.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/burhanpurattraction4_gp1m4f.jpg",
 
   // Gallery images – each mapped by its file name (gallary1 … gallary11)
   gallery1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767269/burhanpurgallary1_txzc2x.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/burhanpurgallary1_txzc2x.jpg",
   gallery2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767270/burhanpurgallary2_jdjyhk.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/burhanpurgallary2_jdjyhk.jpg",
   gallery3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767272/burhanpurgallary3_gfc42w.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/burhanpurgallary3_gfc42w.jpg",
   gallery4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767273/burhanpurgallary4_v3tguh.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/burhanpurgallary4_v3tguh.jpg",
   gallery5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767274/burhanpurgallary5_rhkguq.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/burhanpurgallary5_rhkguq.jpg",
   gallery6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767276/burhanpurgallary6_skynwa.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/burhanpurgallary6_skynwa.jpg",
   gallery7:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767279/burhanpurgallary7_nelu8v.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/burhanpurgallary7_nelu8v.jpg",
   gallery8:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767280/burhanpurgallary8_sjqbsb.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/burhanpurgallary8_sjqbsb.jpg",
   gallery9:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767280/burhanpurgallary9_lwrexc.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/burhanpurgallary9_lwrexc.jpg",
   gallery10:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767282/burhanpurgallary10_dz68i3.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/burhanpurgallary10_dz68i3.jpg",
   gallery11:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767283/burhanpurgallary11_ga1wks.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/burhanpurgallary11_ga1wks.jpg",
 };
 
 const burhanpur: DestinationContent = {

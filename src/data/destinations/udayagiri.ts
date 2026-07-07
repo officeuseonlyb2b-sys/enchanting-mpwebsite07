@@ -4,29 +4,29 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped by filename (attraction1, attraction2, attraction4, attraction3)
   udayagiriattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781618/udayagiriattraction1_ycixsf.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/udayagiriattraction1_ycixsf.jpg",
   udayagiriattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781622/udayagiriattraction2_djzczp.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/udayagiriattraction2_djzczp.jpg",
   udayagiriattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781643/udayagiriattraction3_ey5rdz.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/udayagiriattraction3_ey5rdz.jpg",
   udayagiriattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781630/udayagiriattraction4_suezmw.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/udayagiriattraction4_suezmw.jpg",
 
   // Gallery images – mapped to udayagirigallary1..7
   udayagirigallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781634/udayagirigallary1_kypn22.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/udayagirigallary1_kypn22.jpg",
   udayagirigallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781637/udayagirigallary2_jdol96.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/udayagirigallary2_jdol96.jpg",
   udayagirigallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781641/udayagirigallary3_lsjt1u.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/udayagirigallary3_lsjt1u.jpg",
   udayagirigallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781645/udayagirigallary4_ahaqey.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/udayagirigallary4_ahaqey.jpg",
   udayagirigallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781649/udayagirigallary5_lhpsvk.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/udayagirigallary5_lhpsvk.jpg",
   udayagirigallary6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781653/udayagirigallary6_pvd72d.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/udayagirigallary6_pvd72d.jpg",
   udayagirigallary7:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781657/udayagirigallary7_gidmcr.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/udayagirigallary7_gidmcr.jpg",
 };
 
 const udayagiri: DestinationContent = {

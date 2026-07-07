@@ -4,25 +4,25 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped to parsiliattraction1..4
   parsiliattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781779137/parsiliattraction1_bhdsmg.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/parsiliattraction1_bhdsmg.jpg",
   parsiliattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781779140/parsiliattraction2_qgwzya.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/parsiliattraction2_qgwzya.jpg",
   parsiliattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781779141/parsiliattraction3_ayovwn.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/parsiliattraction3_ayovwn.jpg",
   parsiliattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781779144/parsiliattraction4_vhyk8m.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/parsiliattraction4_vhyk8m.jpg",
 
   // Gallery images – mapped to parsiligallary1..5
   parsiligallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781779148/parsiligallary1_somnvc.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/parsiligallary1_somnvc.jpg",
   parsiligallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781779150/parsiligallary2_tvx86k.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/parsiligallary2_tvx86k.jpg",
   parsiligallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781779154/parsiligallary3_vvjmuq.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/parsiligallary3_vvjmuq.jpg",
   parsiligallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781779157/parsiligallary4_im7eul.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/parsiligallary4_im7eul.jpg",
   parsiligallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781779160/parsiligallary5_fbce63.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/parsiligallary5_fbce63.jpg",
 };
 
 const parsili: DestinationContent = {

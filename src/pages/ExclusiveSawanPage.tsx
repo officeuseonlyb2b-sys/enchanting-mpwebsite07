@@ -17,7 +17,7 @@ import SawanMobileEnquireFab from "@/features/sawan-packages/components/SawanMob
 // ✅ Your existing image – confirmed to exist
 import TestimonialsSection from "@/components/TestimonialsSection";
 
-const formBackgroundImg = "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607210/formbackgroundimg_b5lx32.jpg";
+const formBackgroundImg = "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/formbackgroundimg_b5lx32.jpg";
 
 
 const ORANGE = "#FF7A00";

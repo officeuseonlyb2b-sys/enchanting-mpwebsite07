@@ -4,27 +4,27 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped to sonagiriattraction1..4
   sonagiriattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781289/sonagiriattraction1_qb1w3u.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sonagiriattraction1_qb1w3u.jpg",
   sonagiriattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781290/sonagiriattraction2_q860t9.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sonagiriattraction2_q860t9.jpg",
   sonagiriattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781295/sonagiriattraction3_ex0nxt.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sonagiriattraction3_ex0nxt.jpg",
   sonagiriattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781298/sonagiriattraction4_bat2zc.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sonagiriattraction4_bat2zc.jpg",
 
   // Gallery images – mapped to sonagirigallary1..6
   sonagirigallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781302/sonagirigallary1_ifdhbc.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sonagirigallary1_ifdhbc.jpg",
   sonagirigallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781306/sonagirigallary2_uy0ery.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sonagirigallary2_uy0ery.jpg",
   sonagirigallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781309/sonagirigallary3_iyp8uf.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sonagirigallary3_iyp8uf.jpg",
   sonagirigallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781313/sonagirigallary4_nhwzpk.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sonagirigallary4_nhwzpk.jpg",
   sonagirigallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781318/sonagirigallary5_fsbtio.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sonagirigallary5_fsbtio.jpg",
   sonagirigallary6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781322/sonagirigallary6_dehofw.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sonagirigallary6_dehofw.jpg",
 };
 
 const sonagiri: DestinationContent = {

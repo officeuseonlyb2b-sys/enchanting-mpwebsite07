@@ -69,70 +69,70 @@ export const sawanCampaign = {
       title: "The Sacred Bhasma Aarti",
       location: "Ujjain",
       image: "", // removed s1.url
-      videoUrl: "https://res.cloudinary.com/dfyuf0bjl/video/upload/v1781608195/video1_opt1ja.mp4",
+      videoUrl: "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/videos/video1_opt1ja.mp4",
     },
     {
       id: "reel-2",
       title: "The Thousand-Lamp Ceremony at Harsiddhi Shaktipeeth",
       location: "Ujjain",
       image: "", // removed s2.url
-      videoUrl: "https://res.cloudinary.com/dfyuf0bjl/video/upload/v1781608204/video2_rbhcnv.mp4",
+      videoUrl: "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/videos/video2_rbhcnv.mp4",
     },
     {
       id: "reel-3",
       title: "The Guardian of Mahakaal 'Kaal Bhairav'",
       location: "Ujjain",
       image: "", // removed s3.url
-      videoUrl: "https://res.cloudinary.com/dfyuf0bjl/video/upload/v1781608206/video3_kuvhq3.mp4",
+      videoUrl: "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/videos/video3_kuvhq3.mp4",
     },
     {
       id: "reel-4",
       title: "The Royal Sawari of Mahakaal",
       location: "Ujjain",
       image: "", // removed s4.url
-      videoUrl: "https://res.cloudinary.com/dfyuf0bjl/video/upload/v1781608207/video4_tda3kz.mp4",
+      videoUrl: "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/videos/video4_tda3kz.mp4",
     },
     {
       id: "reel-5",
       title: "The Sacred Om Parikrama by Boat",
       location: "Omkareshwar",
       image: "", // removed heroAsset.url
-      videoUrl: "https://res.cloudinary.com/dfyuf0bjl/video/upload/v1781608191/video5_n1tr5m.mp4",
+      videoUrl: "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/videos/video5_n1tr5m.mp4",
     },
     {
       id: "reel-6",
       title: "The Divine Palki Procession of Omkareshwar",
       location: "Omkareshwar",
       image: "", // removed s1.url
-      videoUrl: "https://res.cloudinary.com/dfyuf0bjl/video/upload/v1781608194/video6_o2o4cd.mp4",
+      videoUrl: "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/videos/video6_o2o4cd.mp4",
     },
     {
       id: "reel-7",
       title: "The Grand Aarti of Holy Shipra",
       location: "Ujjain",
       image: "", // removed s2.url
-      videoUrl: "https://res.cloudinary.com/dfyuf0bjl/video/upload/v1781608201/video7_yqjzyu.mp4",
+      videoUrl: "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/videos/video7_yqjzyu.mp4",
     },
     {
       id: "reel-8",
       title: "A Privileged Moment with Mahakaal",
       location: "Ujjain",
       image: "", // removed s3.url
-      videoUrl: "https://res.cloudinary.com/dfyuf0bjl/video/upload/v1781608211/video8_ft9kx6.mp4",
+      videoUrl: "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/videos/video8_ft9kx6.mp4",
     },
     {
       id: "reel-9",
       title: "Shravan's Grand Gulaal Celebration",
       location: "Omkareshwar",
       image: "", // removed s4.url
-      videoUrl: "https://res.cloudinary.com/dfyuf0bjl/video/upload/v1781608211/video9_r4iev6.mp4",
+      videoUrl: "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/videos/video9_r4iev6.mp4",
     },
     {
       id: "reel-10",
       title: "The Ritual of Abhishekam",
       location: "Omkareshwar",
       image: "", // removed heroAsset.url
-      videoUrl: "https://res.cloudinary.com/dfyuf0bjl/video/upload/v1781608213/video10_ovlwxj.mp4",
+      videoUrl: "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/videos/video10_ovlwxj.mp4",
     },
   ] satisfies SawanReel[],
   packages: [
