@@ -8,7 +8,7 @@ import { useAutoScroll } from "@/hooks/useAutoScroll";
 import { useInViewport } from "@/hooks/useInViewport";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { getReelCategories, matchesFilters } from "@/lib/categoryMatch";
-import { cldVideo, pickVideoWidth } from "@/lib/cloudinary";
+
 
 // ============================================================
 // VIDEO (lazy-loaded when near viewport, no image fallback)
