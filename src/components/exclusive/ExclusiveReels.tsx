@@ -184,15 +184,14 @@ interface Props {
 
 const ExclusiveReels = ({ reels }: Props) => {
   const isMobile = useIsMobile();
+  void isMobile;
   // Manual horizontal scroll only — render a single set on all viewports.
   const sliderData = useMemo(() => [...reels], [reels]);
 
-  // Precompute video sources once per slider/mobile change so each ReelCard
-  // receives a stable string prop and React.memo can short-circuit re-renders.
-  const videoWidth = pickVideoWidth(isMobile);
+  // Video sources are used directly (Supabase Storage public URLs).
   const videoSrcs = useMemo(
-    () => sliderData.map((r) => cldVideo(r.videoUrl, { w: videoWidth })),
-    [sliderData, videoWidth]
+    () => sliderData.map((r) => r.videoUrl),
+    [sliderData]
   );
 
   const containerRef = useRef<HTMLDivElement>(null);
