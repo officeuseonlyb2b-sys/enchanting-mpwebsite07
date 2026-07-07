@@ -159,7 +159,7 @@ ReelCard.displayName = "ReelCard";
 const ReelsSection = () => {
   const { selectedFilters, isAll } = useFilters();
   const isMobile = useIsMobile();
-  const videoWidth = pickVideoWidth(isMobile);
+  void isMobile;
 
   const { ref, onMouseEnter, onMouseLeave } =
     useAutoScroll<HTMLDivElement>(50);
