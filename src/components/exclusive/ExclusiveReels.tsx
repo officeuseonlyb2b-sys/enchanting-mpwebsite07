@@ -4,7 +4,7 @@ import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { SawanCampaign } from "@/data/exclusive/sawanData";
 import { useInViewport } from "@/hooks/useInViewport";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { cldVideo, pickVideoWidth } from "@/lib/cloudinary";
+
 
 // ============================================================
 // VIDEO – playback driven entirely by parent `playing` prop
