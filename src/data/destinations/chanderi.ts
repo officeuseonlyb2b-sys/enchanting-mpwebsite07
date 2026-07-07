@@ -4,33 +4,33 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped by filename (attraction1,2,3,4)
   attraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769170/chanderiattraction1_oftzxw.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chanderiattraction1_oftzxw.jpg",
   attraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769170/chanderiattraction2_frgip4.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chanderiattraction2_frgip4.jpg",
   attraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769172/chanderiattraction3_yzx3xy.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chanderiattraction3_yzx3xy.jpg",
   attraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769171/chanderiattraction4_rylvcl.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chanderiattraction4_rylvcl.jpg",
 
   // Gallery images – each mapped by its variable name (gallary, gallary1…8)
   gallary: // this matches the import named "chanderigallary" (without number)
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769174/chanderigallary_mzm9gu.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chanderigallary_mzm9gu.jpg",
   gallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769175/chanderigallary1_rbskna.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chanderigallary1_rbskna.jpg",
   gallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769180/chanderigallary2_jlrxzt.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chanderigallary2_jlrxzt.jpg",
   gallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769179/chanderigallary3_ers4hq.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chanderigallary3_ers4hq.jpg",
   gallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769180/chanderigallary4_qslkm5.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chanderigallary4_qslkm5.jpg",
   gallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769182/chanderigallary5_tvxxxf.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chanderigallary5_tvxxxf.jpg",
   gallary6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769184/chanderigallary6_ez7y2l.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chanderigallary6_ez7y2l.jpg",
   gallary7:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769185/chanderigallary7_vds41n.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chanderigallary7_vds41n.jpg",
   gallary8:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769186/chanderigallary8_yrfc0g.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chanderigallary8_yrfc0g.jpg",
 };
 
 const chanderi: DestinationContent = {

@@ -3,26 +3,26 @@ import type { DestinationContent } from "./types";
 // All images served from Cloudinary
 const images = {
   attraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764501/amarkantakattraction1_u3q7cu.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/amarkantakattraction1_u3q7cu.jpg",
   attraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764505/amarkantakattraction2_oauumy.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/amarkantakattraction2_oauumy.jpg",
   attraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764509/amarkantakattraction3_sxoq6j.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/amarkantakattraction3_sxoq6j.jpg",
   attraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764503/amarkantakattraction4_zvn3eh.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/amarkantakattraction4_zvn3eh.jpg",
 
   gallery1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764502/amarkantakgallary1_dpfh67.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/amarkantakgallary1_dpfh67.jpg",
   gallery2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764502/amarkantakgallary2_anlhrb.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/amarkantakgallary2_anlhrb.jpg",
   gallery3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764503/amarkantakgallary3_nbznqh.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/amarkantakgallary3_nbznqh.jpg",
   gallery4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764523/amarkantakgallary4_mmnatw.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/amarkantakgallary4_mmnatw.jpg",
   gallery5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764550/amarkantakgallary5_gh2mev.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/amarkantakgallary5_gh2mev.jpg",
   gallery6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764560/amarkantakgallary6_pwea6y.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/amarkantakgallary6_pwea6y.jpg",
 };
 
 const amarkantak: DestinationContent = {

@@ -4,33 +4,33 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped to satpuraattraction1..4
   satpuraattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780561/satpuraattraction1_tlatil.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/satpuraattraction1_tlatil.jpg",
   satpuraattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780563/satpuraattraction2_rsmtw0.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/satpuraattraction2_rsmtw0.jpg",
   satpuraattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780566/satpuraattraction3_rzdbxa.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/satpuraattraction3_rzdbxa.jpg",
   satpuraattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780570/satpuraattraction4_nnbntg.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/satpuraattraction4_nnbntg.jpg",
 
   // Gallery images – mapped to satpuragallary1..9
   satpuragallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780573/satpuragallary1_cakh9h.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/satpuragallary1_cakh9h.jpg",
   satpuragallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780577/satpuragallary2_pu2gds.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/satpuragallary2_pu2gds.jpg",
   satpuragallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780581/satpuragallary3_xldyew.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/satpuragallary3_xldyew.jpg",
   satpuragallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780584/satpuragallary4_zspco1.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/satpuragallary4_zspco1.jpg",
   satpuragallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780588/satpuragallary5_ogjczo.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/satpuragallary5_ogjczo.jpg",
   satpuragallary6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780592/satpuragallary6_sho1nx.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/satpuragallary6_sho1nx.jpg",
   satpuragallary7:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780596/satpuragallary7_qdmtpj.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/satpuragallary7_qdmtpj.jpg",
   satpuragallary8:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780600/satpuragallary8_oavldz.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/satpuragallary8_oavldz.jpg",
   satpuragallary9:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780604/satpuragallary9_u2dc30.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/satpuragallary9_u2dc30.jpg",
 };
 
 const satpura: DestinationContent = {

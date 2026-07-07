@@ -4,29 +4,29 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped by filename to the variable names
   sailaniattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781779978/sailaniattraction1_m0ocus.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sailaniattraction1_m0ocus.jpg",
   sailaniattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781779967/sailaniattraction2_kug1ly.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sailaniattraction2_kug1ly.jpg",
   sailaniattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781779969/sailaniattraction3_j0kblb.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sailaniattraction3_j0kblb.jpg",
   sailaniattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781779973/sailaniattraction4_bl2oqh.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sailaniattraction4_bl2oqh.jpg",
 
   // Gallery images – mapped by filename (gallary1 … gallary7)
   sailanigallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781779975/sailanigallary1_cpy7q8.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sailanigallary1_cpy7q8.jpg",
   sailanigallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781779979/sailanigallary2_pfqfkj.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sailanigallary2_pfqfkj.jpg",
   sailanigallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781779983/sailanigallary3_iskbdm.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sailanigallary3_iskbdm.jpg",
   sailanigallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781779987/sailanigallary4_na4wj3.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sailanigallary4_na4wj3.jpg",
   sailanigallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781779990/sailanigallary5_xhn8ih.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sailanigallary5_xhn8ih.jpg",
   sailanigallary6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781779993/sailanigallary6_mhngyf.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sailanigallary6_mhngyf.jpg",
   sailanigallary7:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781779997/sailanigallary7_akqfoh.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sailanigallary7_akqfoh.jpg",
 };
 
 const sailani: DestinationContent = {

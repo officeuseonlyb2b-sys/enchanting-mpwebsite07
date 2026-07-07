@@ -4,31 +4,31 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images (ordered by the provided list)
   attraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765856/bhimbetkaattraction3_snphk2.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhimbetkaattraction3_snphk2.jpg",
   attraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765855/bhimbetkaattraction4_mgb2mp.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhimbetkaattraction4_mgb2mp.jpg",
   attraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765855/bhimbetkaattraction2_rxvu1m.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhimbetkaattraction2_rxvu1m.jpg",
   attraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765854/bhimbetkaattraction1_uuzjfv.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhimbetkaattraction1_uuzjfv.jpg",
 
   // Gallery images (ordered from the provided list, note gallery4 duplicate is ignored)
   gallery8:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765867/bhimbetkagallary8_abuh7l.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhimbetkagallary8_abuh7l.jpg",
   gallery7:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765865/bhimbetkagallary7_vdv7kq.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhimbetkagallary7_vdv7kq.jpg",
   gallery6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765864/bhimbetkagallary6_iqhd1x.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhimbetkagallary6_iqhd1x.jpg",
   gallery5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765862/bhimbetkagallary5_tjaojc.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhimbetkagallary5_tjaojc.jpg",
   gallery4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765861/bhimbetkagallary4_j9pcum.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhimbetkagallary4_j9pcum.jpg",
   gallery3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765860/bhimbetkagallary3_rkhxbu.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhimbetkagallary3_rkhxbu.jpg",
   gallery2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765859/bhimbetkagallary2_flionj.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhimbetkagallary2_flionj.jpg",
   gallery1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781765857/bhimbetkagallary1_kabhvb.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhimbetkagallary1_kabhvb.jpg",
 };
 
 const bhimbetka: DestinationContent = {

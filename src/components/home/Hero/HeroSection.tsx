@@ -3,8 +3,8 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { cldVideo } from "@/lib/cloudinary";
 
 // Video URLs
-const DESKTOP_VIDEO_SRC = "https://res.cloudinary.com/dfyuf0bjl/video/upload/v1781689853/home-banner-video_cewinf.mp4";
-const MOBILE_VIDEO_SRC  = "https://res.cloudinary.com/dfyuf0bjl/video/upload/v1781689287/main-mobile_s699xg.mp4";
+const DESKTOP_VIDEO_SRC = "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/home-banner-video_cewinf.mp4";
+const MOBILE_VIDEO_SRC  = "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/videos/main-mobile_s699xg.mp4";
 
 // Poster and alt – replace with your actual poster URL and description
 const POSTER_URL = "";          // e.g. "/hero-poster.jpg"

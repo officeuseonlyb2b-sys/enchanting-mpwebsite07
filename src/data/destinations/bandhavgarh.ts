@@ -3,36 +3,36 @@ import type { DestinationContent } from "./types";
 // All images served from Cloudinary
 const images = {
   attraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764872/bandhavgarhattraction1_qtcdt6.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bandhavgarhattraction1_qtcdt6.jpg",
   attraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764875/bandhavgarhattraction2_dk8sab.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bandhavgarhattraction2_dk8sab.jpg",
   attraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764879/bandhavgarhattraction3_mtrtea.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bandhavgarhattraction3_mtrtea.jpg",
   attraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764874/bandhavgarhattraction4_fxaqqx.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bandhavgarhattraction4_fxaqqx.jpg",
 
   gallery1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764875/bandhavgarhgallary1_mzcgpy.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bandhavgarhgallary1_mzcgpy.jpg",
   gallery2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764875/bandhavgarhgallary2_jxqxuv.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bandhavgarhgallary2_jxqxuv.jpg",
   gallery3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764874/bandhavgarhgallary3_arlqiz.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bandhavgarhgallary3_arlqiz.jpg",
   gallery4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764877/bandhavgarhgallary4_pmhw11.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bandhavgarhgallary4_pmhw11.jpg",
   gallery5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764875/bandhavgarhgallary5_lecmqj.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bandhavgarhgallary5_lecmqj.jpg",
   gallery6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764875/bandhavgarhgallary6_yvishy.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bandhavgarhgallary6_yvishy.jpg",
   gallery7:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764879/bandhavgarhgallary7_ei4ndj.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bandhavgarhgallary7_ei4ndj.jpg",
   gallery8:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764877/bandhavgarhgallary8_oivluf.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bandhavgarhgallary8_oivluf.jpg",
   gallery9:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764876/bandhavgarhgallary9_txlhsa.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bandhavgarhgallary9_txlhsa.jpg",
   gallery10:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764883/bandhavgarhgallary10_zsoeri.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bandhavgarhgallary10_zsoeri.jpg",
   gallery11:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781764886/bandhavgarhgallary11_obnjx8.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bandhavgarhgallary11_obnjx8.jpg",
 };
 
 const bandhavgarh: DestinationContent = {

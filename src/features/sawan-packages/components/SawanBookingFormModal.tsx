@@ -255,7 +255,7 @@ const SawanBookingFormModal = ({ open, onClose }: Props) => {
             {/* Hero Header (image banner matching booking page) */}
             <div className="relative flex-shrink-0 overflow-hidden">
               <img
-                src="https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607210/formbackgroundimg_b5lx32.jpg"
+                src="https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/formbackgroundimg_b5lx32.jpg"
                 alt="Begin Your Sacred Journey"
                 className="absolute inset-0 w-full h-full object-cover"
               />

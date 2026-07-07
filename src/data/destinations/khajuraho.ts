@@ -4,35 +4,35 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped to the exact variable names
   khajurahoattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781775575/khajurahoattraction1_iyt9ru.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/khajurahoattraction1_iyt9ru.jpg",
   khajurahoattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781775576/khajurahoattraction2_adylba.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/khajurahoattraction2_adylba.jpg",
   khajurahoattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781775577/khajurahoattraction3_kpffgq.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/khajurahoattraction3_kpffgq.jpg",
   khajurahoattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781775580/khajurahoattraction4_lxfr4d.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/khajurahoattraction4_lxfr4d.jpg",
 
   // Gallery images – mapped to khajurahogallary1..10
   khajurahogallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781775583/khajurahogallary1_qemrvj.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/khajurahogallary1_qemrvj.jpg",
   khajurahogallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781775585/khajurahogallary2_yqgcar.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/khajurahogallary2_yqgcar.jpg",
   khajurahogallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781775588/khajurahogallary3_ql2exa.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/khajurahogallary3_ql2exa.jpg",
   khajurahogallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781775590/khajurahogallary4_mwh1bx.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/khajurahogallary4_mwh1bx.jpg",
   khajurahogallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781775592/khajurahogallary5_sole3m.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/khajurahogallary5_sole3m.jpg",
   khajurahogallary6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781775595/khajurahogallary6_w62hby.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/khajurahogallary6_w62hby.jpg",
   khajurahogallary7:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781775597/khajurahogallary7_fbla3h.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/khajurahogallary7_fbla3h.jpg",
   khajurahogallary8:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781775599/khajurahogallary8_mwqded.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/khajurahogallary8_mwqded.jpg",
   khajurahogallary9:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781775602/khajurahogallary9_ash36r.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/khajurahogallary9_ash36r.jpg",
   khajurahogallary10:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781775604/khajurahogallary10_y5rqdr.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/khajurahogallary10_y5rqdr.jpg",
 };
 
 const khajuraho: DestinationContent = {

@@ -4,37 +4,37 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped to orchhaattraction1..4
   orchhaattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778166/orchhaattraction1_x3z81g.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/orchhaattraction1_x3z81g.jpg",
   orchhaattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778168/orchhaattraction2_rusemq.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/orchhaattraction2_rusemq.jpg",
   orchhaattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778172/orchhaattraction3_t1gx8t.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/orchhaattraction3_t1gx8t.jpg",
   orchhaattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778185/orchhaattraction4_ik8wwu.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/orchhaattraction4_ik8wwu.jpg",
 
   // Gallery images – mapped to orchhagallary1..11
   orchhagallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778188/orchhagallary1_rmlfyr.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/orchhagallary1_rmlfyr.jpg",
   orchhagallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778191/orchhagallary2_zbmkzm.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/orchhagallary2_zbmkzm.jpg",
   orchhagallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778194/orchhagallary3_zrdkkt.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/orchhagallary3_zrdkkt.jpg",
   orchhagallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778197/orchhagallary4_qqs4p0.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/orchhagallary4_qqs4p0.jpg",
   orchhagallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778200/orchhagallary5_lhpcoe.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/orchhagallary5_lhpcoe.jpg",
   orchhagallary6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778203/orchhagallary6_pwcmym.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/orchhagallary6_pwcmym.jpg",
   orchhagallary7:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778206/orchhagallary7_rixrof.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/orchhagallary7_rixrof.jpg",
   orchhagallary8:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778209/orchhagallary8_rnwbpx.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/orchhagallary8_rnwbpx.jpg",
   orchhagallary9:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778211/orchhagallary9_yxwokk.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/orchhagallary9_yxwokk.jpg",
   orchhagallary10:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778215/orchhagallary10_qv731e.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/orchhagallary10_qv731e.jpg",
   orchhagallary11:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778218/orchhagallary11_djtdzo.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/orchhagallary11_djtdzo.jpg",
 };
 
 const orchha: DestinationContent = {

@@ -4,33 +4,33 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped to pannaattraction1..4
   pannaattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778765/pannaattraction1_gukicp.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/pannaattraction1_gukicp.jpg",
   pannaattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778767/pannaattraction2_dkwu6p.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/pannaattraction2_dkwu6p.jpg",
   pannaattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778769/pannaattraction3_iedkw6.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/pannaattraction3_iedkw6.jpg",
   pannaattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778773/pannaattraction4_da4hmd.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/pannaattraction4_da4hmd.jpg",
 
   // Gallery images – mapped to pannagallary1..9
   pannagallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778775/pannagallary1_lubajo.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/pannagallary1_lubajo.jpg",
   pannagallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778778/pannagallary2_rj3lta.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/pannagallary2_rj3lta.jpg",
   pannagallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778782/pannagallary3_puqxwl.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/pannagallary3_puqxwl.jpg",
   pannagallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778785/pannagallary4_j86j4v.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/pannagallary4_j86j4v.jpg",
   pannagallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778788/pannagallary5_wlmq5m.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/pannagallary5_wlmq5m.jpg",
   pannagallary6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778791/pannagallary6_wedafz.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/pannagallary6_wedafz.jpg",
   pannagallary7:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778794/pannagallary7_zfxz63.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/pannagallary7_zfxz63.jpg",
   pannagallary8:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778797/pannagallary8_smktvo.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/pannagallary8_smktvo.jpg",
   pannagallary9:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781778800/pannagallary9_onsbjn.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/pannagallary9_onsbjn.jpg",
 };
 
 const panna: DestinationContent = {

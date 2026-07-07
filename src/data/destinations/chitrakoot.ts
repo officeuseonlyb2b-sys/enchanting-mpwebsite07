@@ -4,33 +4,33 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped by filename
   attraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769505/chitrakootattraction1_sbujfh.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chitrakootattraction1_sbujfh.jpg",
   attraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769505/chitrakootattraction2_xmeycj.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chitrakootattraction2_xmeycj.jpg",
   attraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769507/chitrakootattraction3_f2ifcw.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chitrakootattraction3_f2ifcw.jpg",
   attraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769506/chitrakootattraction4_bnlujp.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chitrakootattraction4_bnlujp.jpg",
 
   // Gallery images – each mapped by its variable name (gallary1 … gallary9)
   gallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769508/chitrakootgallary1_ef3ib9.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chitrakootgallary1_ef3ib9.jpg",
   gallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769511/chitrakootgallary2_lzzrkx.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chitrakootgallary2_lzzrkx.jpg",
   gallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769512/chitrakootgallary3_ig50un.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chitrakootgallary3_ig50un.jpg",
   gallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769516/chitrakootgallary4_blgsuo.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chitrakootgallary4_blgsuo.jpg",
   gallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769518/chitrakootgallary5_lumzah.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chitrakootgallary5_lumzah.jpg",
   gallary6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769518/chitrakootgallary6_ilb6ku.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chitrakootgallary6_ilb6ku.jpg",
   gallary7:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769519/chitrakootgallary7_yicyo7.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chitrakootgallary7_yicyo7.jpg",
   gallary8:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769520/chitrakootgallary8_uuodfj.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chitrakootgallary8_uuodfj.jpg",
   gallary9:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769523/chitrakootgallary9_fupcfj.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chitrakootgallary9_fupcfj.jpg",
 };
 
 const chitrakoot: DestinationContent = {

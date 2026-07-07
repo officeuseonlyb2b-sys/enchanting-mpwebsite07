@@ -4,39 +4,39 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images (from the provided list in order: attraction1, attraction2, attraction3, attraction4)
   attraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766623/bhopalattraction1_dmq9mr.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhopalattraction1_dmq9mr.jpg",
   attraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766624/bhopalattraction2_dgjet7.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhopalattraction2_dgjet7.jpg",
   attraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766626/bhopalattraction3_vzvbxp.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhopalattraction3_vzvbxp.jpg",
   attraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766627/bhopalattraction4_emkcjy.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhopalattraction4_emkcjy.jpg",
 
   // Gallery images (each mapped by the filename, e.g., gallary1 → gallery1)
   gallery1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766629/bhopalgallary1_utlzaz.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhopalgallary1_utlzaz.jpg",
   gallery2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766630/bhopalgallary2_mdd8bv.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhopalgallary2_mdd8bv.jpg",
   gallery3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766632/bhopalgallary3_kdnrfp.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhopalgallary3_kdnrfp.jpg",
   gallery4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766635/bhopalgallary4_j8ed5v.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhopalgallary4_j8ed5v.jpg",
   gallery5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766634/bhopalgallary5_pmq7bb.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhopalgallary5_pmq7bb.jpg",
   gallery6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766637/bhopalgallary6_zrb7jw.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhopalgallary6_zrb7jw.jpg",
   gallery7:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766641/bhopalgallary7_sess5m.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhopalgallary7_sess5m.jpg",
   gallery8:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766638/bhopalgallary8_vam31o.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhopalgallary8_vam31o.jpg",
   gallery9:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766640/bhopalgallary9_ixyqrs.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhopalgallary9_ixyqrs.jpg",
   gallery10:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766641/bhopalgallary10_alnupq.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhopalgallary10_alnupq.jpg",
   gallery11:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766642/bhopalgallary11_oehgqk.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhopalgallary11_oehgqk.jpg",
   gallery12:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766645/bhopalgallary12_anszwt.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhopalgallary12_anszwt.jpg",
 };
 
 const bhopal: DestinationContent = {

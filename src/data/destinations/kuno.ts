@@ -4,27 +4,27 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped to the exact variable names
   kunoattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781775825/kunoattraction1_qsxtzp.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/kunoattraction1_qsxtzp.jpg",
   kunoattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781775827/kunoattraction2_y5ss5e.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/kunoattraction2_y5ss5e.jpg",
   kunoattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781775830/kunoattraction3_v2dsaq.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/kunoattraction3_v2dsaq.jpg",
   kunoattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781775832/kunoattraction4_gy1qvn.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/kunoattraction4_gy1qvn.jpg",
 
   // Gallery images – mapped to kunogallary1..6
   kunogallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781775834/kunogallary1_mhcjlv.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/kunogallary1_mhcjlv.jpg",
   kunogallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781775837/kunogallary2_quoszk.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/kunogallary2_quoszk.jpg",
   kunogallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781775839/kunogallary3_sysebo.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/kunogallary3_sysebo.jpg",
   kunogallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781775841/kunogallary4_b8kt9k.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/kunogallary4_b8kt9k.jpg",
   kunogallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781775844/kunogallary5_mgynue.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/kunogallary5_mgynue.jpg",
   kunogallary6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781775846/kunogallary6_ogn19e.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/kunogallary6_ogn19e.jpg",
 };
 
 const kuno: DestinationContent = {

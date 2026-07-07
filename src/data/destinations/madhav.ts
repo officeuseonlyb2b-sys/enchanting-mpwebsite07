@@ -4,27 +4,27 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped to the exact variable names
   madhavattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781776032/madhavattraction1_mv0tul.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/madhavattraction1_mv0tul.jpg",
   madhavattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781776034/madhavattraction2_uliyfc.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/madhavattraction2_uliyfc.jpg",
   madhavattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781776037/madhavattraction3_mcxd4y.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/madhavattraction3_mcxd4y.jpg",
   madhavattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781776039/madhavattraction4_yeh70z.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/madhavattraction4_yeh70z.jpg",
 
   // Gallery images – mapped to madhavgallary1..6
   madhavgallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781776042/madhavgallary1_idl1lv.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/madhavgallary1_idl1lv.jpg",
   madhavgallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781776045/madhavgallary2_xkx3u3.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/madhavgallary2_xkx3u3.jpg",
   madhavgallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781776051/madhavgallary3_inrmoj.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/madhavgallary3_inrmoj.jpg",
   madhavgallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781776054/madhavgallary4_i3oito.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/madhavgallary4_i3oito.jpg",
   madhavgallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781776057/madhavgallary5_pf5zhe.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/madhavgallary5_pf5zhe.jpg",
   madhavgallary6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781776061/madhavgallary6_xnnbwr.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/madhavgallary6_xnnbwr.jpg",
 };
 
 const madhav: DestinationContent = {

@@ -4,37 +4,37 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped to the exact variable names (gwaliorattraction1..4)
   gwaliorattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769675/gwalliorattraction1_aysdpo.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/gwalliorattraction1_aysdpo.jpg",
   gwaliorattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769677/gwalliorattraction2_pimilo.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/gwalliorattraction2_pimilo.jpg",
   gwaliorattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769681/gwalliorattraction3_yz7xvw.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/gwalliorattraction3_yz7xvw.jpg",
   gwaliorattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769682/gwalliorattraction4_txigtp.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/gwalliorattraction4_txigtp.jpg",
 
   // Gallery images – mapped to gwaliorgallary1..11
   gwaliorgallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769684/gwalliorgallary1_ifjrkr.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/gwalliorgallary1_ifjrkr.jpg",
   gwaliorgallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769686/gwalliorgallary2_o81hfa.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/gwalliorgallary2_o81hfa.jpg",
   gwaliorgallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769690/gwalliorgallary3_qnqdei.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/gwalliorgallary3_qnqdei.jpg",
   gwaliorgallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769689/gwalliorgallary4_qkwpag.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/gwalliorgallary4_qkwpag.jpg",
   gwaliorgallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769691/gwalliorgallary5_svy5tg.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/gwalliorgallary5_svy5tg.jpg",
   gwaliorgallary6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769693/gwalliorgallary6_cc7hyt.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/gwalliorgallary6_cc7hyt.jpg",
   gwaliorgallary7:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769734/gwalliorgallary7_l1vgfd.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/gwalliorgallary7_l1vgfd.jpg",
   gwaliorgallary8:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769736/gwalliorgallary8_ubn4wd.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/gwalliorgallary8_ubn4wd.jpg",
   gwaliorgallary9:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769738/gwalliorgallary9_vordpy.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/gwalliorgallary9_vordpy.jpg",
   gwaliorgallary10:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769740/gwalliorgallary10_eivgyx.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/gwalliorgallary10_eivgyx.jpg",
   gwaliorgallary11:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781769742/gwalliorgallary11_uh37tn.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/gwalliorgallary11_uh37tn.jpg",
 };
 
 const gwalior: DestinationContent = {

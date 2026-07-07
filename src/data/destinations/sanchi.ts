@@ -4,27 +4,27 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped to sanchiattraction1..4
   sanchiattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780135/sanchiattraction1_lmxmx5.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sanchiattraction1_lmxmx5.jpg",
   sanchiattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780155/sanchiattraction2_ukf4ys.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sanchiattraction2_ukf4ys.jpg",
   sanchiattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780158/sanchiattraction3_qmz8lx.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sanchiattraction3_qmz8lx.jpg",
   sanchiattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780162/sanchiattraction4_phfwuj.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sanchiattraction4_phfwuj.jpg",
 
   // Gallery images – mapped to sanchigallary1..6
   sanchigallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780165/sanchigallary1_tfrwp8.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sanchigallary1_tfrwp8.jpg",
   sanchigallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780168/sanchigallary2_h3yftr.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sanchigallary2_h3yftr.jpg",
   sanchigallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780172/sanchigallary3_lkwr0z.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sanchigallary3_lkwr0z.jpg",
   sanchigallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780175/sanchigallary4_hkee4i.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sanchigallary4_hkee4i.jpg",
   sanchigallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780178/sanchigallary5_icqvns.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sanchigallary5_icqvns.jpg",
   sanchigallary6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781780181/sanchigallary6_szrhg0.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/sanchigallary6_szrhg0.jpg",
 };
 
 const sanchi: DestinationContent = {

@@ -4,37 +4,37 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped to manduattraction1..4
   manduattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777321/manduattraction1_kz787p.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/manduattraction1_kz787p.jpg",
   manduattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777340/manduattraction2_fnwj2e.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/manduattraction2_fnwj2e.jpg",
   manduattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777343/manduattraction3_svxda1.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/manduattraction3_svxda1.jpg",
   manduattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777346/manduattraction4_advpxk.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/manduattraction4_advpxk.jpg",
 
   // Gallery images – mapped to mandugallary1..11
   mandugallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777349/mandugallary1_en6mh9.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mandugallary1_en6mh9.jpg",
   mandugallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777352/mandugallary2_qrat4i.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mandugallary2_qrat4i.jpg",
   mandugallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777355/mandugallary3_e6nerj.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mandugallary3_e6nerj.jpg",
   mandugallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777358/mandugallary4_phpto4.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mandugallary4_phpto4.jpg",
   mandugallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777361/mandugallary5_grb38u.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mandugallary5_grb38u.jpg",
   mandugallary6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777363/mandugallary6_dg64an.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mandugallary6_dg64an.jpg",
   mandugallary7:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777366/mandugallary7_offkak.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mandugallary7_offkak.jpg",
   mandugallary8:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777370/mandugallary8_uotxpb.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mandugallary8_uotxpb.jpg",
   mandugallary9:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777373/mandugallary9_yu0voj.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mandugallary9_yu0voj.jpg",
   mandugallary10:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777382/mandugallary10_noc5e7.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mandugallary10_noc5e7.jpg",
   mandugallary11:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777377/mandugallary11_mqlazt.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mandugallary11_mqlazt.jpg",
 };
 
 const mandu: DestinationContent = {

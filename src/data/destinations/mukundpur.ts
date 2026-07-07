@@ -4,27 +4,27 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped to mukundpurattraction1..4
   mukundpurattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777767/mukundpurattraction1_ctjzlj.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mukundpurattraction1_ctjzlj.jpg",
   mukundpurattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777771/mukundpurattraction2_uxhcuc.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mukundpurattraction2_uxhcuc.jpg",
   mukundpurattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777778/mukundpurattraction3_be5krd.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mukundpurattraction3_be5krd.jpg",
   mukundpurattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777788/mukundpurattraction4_z2yt5s.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mukundpurattraction4_z2yt5s.jpg",
 
   // Gallery images – mapped to mukundpurgallary1..6
   mukundpurgallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777789/mukundpurgallary1_jhtlnz.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mukundpurgallary1_jhtlnz.jpg",
   mukundpurgallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777793/mukundpurgallary2_kqdc62.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mukundpurgallary2_kqdc62.jpg",
   mukundpurgallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777796/mukundpurgallary3_tyxyd1.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mukundpurgallary3_tyxyd1.jpg",
   mukundpurgallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777801/mukundpurgallary4_vwygd2.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mukundpurgallary4_vwygd2.jpg",
   mukundpurgallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777802/mukundpurgallary5_d9kqfo.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mukundpurgallary5_d9kqfo.jpg",
   mukundpurgallary6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777808/mukundpurgallary6_rqhtmn.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mukundpurgallary6_rqhtmn.jpg",
 };
 
 const mukundpur: DestinationContent = {

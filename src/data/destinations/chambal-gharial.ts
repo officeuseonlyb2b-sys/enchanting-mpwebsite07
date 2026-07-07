@@ -4,27 +4,27 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images (from the provided list in order)
   attraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767485/chambalgharialattraction1_j9b84w.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chambalgharialattraction1_j9b84w.jpg",
   attraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767487/chambalgharialattraction2_uo7pyf.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chambalgharialattraction2_uo7pyf.jpg",
   attraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767488/chambalgharialattraction3_opibgt.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chambalgharialattraction3_opibgt.jpg",
   attraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767490/chambalgharialattraction4_kmdqhn.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chambalgharialattraction4_kmdqhn.jpg",
 
   // Gallery images (from the provided list in order)
   gallery1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767492/chambalgharialgallary1_cmfmr1.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chambalgharialgallary1_cmfmr1.jpg",
   gallery2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767493/chambalgharialgallary2_p14qlg.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chambalgharialgallary2_p14qlg.jpg",
   gallery3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767495/chambalgharialgallary3_qff2zd.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chambalgharialgallary3_qff2zd.jpg",
   gallery4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767496/chambalgharialgallary4_cdjsqb.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chambalgharialgallary4_cdjsqb.jpg",
   gallery5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767499/chambalgharialgallary5_qhmkne.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chambalgharialgallary5_qhmkne.jpg",
   gallery6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781767500/chambalgharialgallary6_zka1ox.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/chambalgharialgallary6_zka1ox.jpg",
 };
 
 const chambalgharial: DestinationContent = {

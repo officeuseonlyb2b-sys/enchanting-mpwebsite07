@@ -11,7 +11,7 @@ import {
 import JourneyPopup from "@/components/MadhyaPradeshJourneyModal";
 
 
-const whyChooseUsImage = "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607210/choose_ymv9cu.jpg";
+const whyChooseUsImage = "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/choose_ymv9cu.jpg";
 
 export default function WhychooseUs() {
     const [openJourneyPopup, setOpenJourneyPopup] = useState(false);

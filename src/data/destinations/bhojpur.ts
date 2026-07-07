@@ -6,27 +6,27 @@ const images = {
   // Attraction images (order from provided URLs: attraction1, attraction4, attraction3, attraction2)
   // We assign each to its correct property name
   attraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766372/bhojpurattraction1_n7837t.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhojpurattraction1_n7837t.jpg",
   attraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766374/bhojpurattraction2_ucdncs.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhojpurattraction2_ucdncs.jpg",
   attraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766374/bhojpurattraction3_r8omsm.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhojpurattraction3_r8omsm.jpg",
   attraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766373/bhojpurattraction4_e7iq0x.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhojpurattraction4_e7iq0x.jpg",
 
   // Gallery images (in order: gallery1 to gallery6)
   gallery1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766374/bhojpurgallary1_nurzvs.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhojpurgallary1_nurzvs.jpg",
   gallery2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766377/bhojpurgallary2_b1rsdf.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhojpurgallary2_b1rsdf.jpg",
   gallery3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766378/bhojpurgallary3_devaui.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhojpurgallary3_devaui.jpg",
   gallery4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766380/bhojpurgallary4_bksq82.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhojpurgallary4_bksq82.jpg",
   gallery5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766381/bhojpurgallary5_id1us2.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhojpurgallary5_id1us2.jpg",
   gallery6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781766382/bhojpurgallary6_ooh6yh.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/bhojpurgallary6_ooh6yh.jpg",
 };
 
 const bhojpur: DestinationContent = {

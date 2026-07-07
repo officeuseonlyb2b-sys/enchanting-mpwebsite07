@@ -4,33 +4,33 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped to the exact variable names
   indoreattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770122/indoreattraction1_yf4twt.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/indoreattraction1_yf4twt.jpg",
   indoreattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770123/indoreattraction2_u8ngb7.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/indoreattraction2_u8ngb7.jpg",
   indoreattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770125/indoreattraction3_slftnu.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/indoreattraction3_slftnu.jpg",
   indoreattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770127/indoreattraction4_fn8dbf.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/indoreattraction4_fn8dbf.jpg",
 
   // Gallery images – mapped to indoregallary1..9
   indoregallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770130/indoregallary1_jhltwa.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/indoregallary1_jhltwa.jpg",
   indoregallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770132/indoregallary2_hvurwf.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/indoregallary2_hvurwf.jpg",
   indoregallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770133/indoregallary3_u7el3m.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/indoregallary3_u7el3m.jpg",
   indoregallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770135/indoregallary4_sx9c8o.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/indoregallary4_sx9c8o.jpg",
   indoregallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770137/indoregallary5_wkvowk.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/indoregallary5_wkvowk.jpg",
   indoregallary6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770138/indoregallary6_es8jus.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/indoregallary6_es8jus.jpg",
   indoregallary7:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770141/indoregallary7_s1asri.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/indoregallary7_s1asri.jpg",
   indoregallary8:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770143/indoregallary8_mnf3ob.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/indoregallary8_mnf3ob.jpg",
   indoregallary9:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781770144/indoregallary9_dcan9d.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/indoregallary9_dcan9d.jpg",
 };
 
 const indore: DestinationContent = {

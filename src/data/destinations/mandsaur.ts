@@ -4,27 +4,27 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped to mandsaurattraction1..4
   mandsaurattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777161/mandsaurattraction1_r3rsny.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mandsaurattraction1_r3rsny.jpg",
   mandsaurattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777161/mandsaurattraction2_jyxoua.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mandsaurattraction2_jyxoua.jpg",
   mandsaurattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777163/mandsaurattraction3_oqgqx2.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mandsaurattraction3_oqgqx2.jpg",
   mandsaurattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777167/mandsaurattraction4_hbmfbe.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mandsaurattraction4_hbmfbe.jpg",
 
   // Gallery images – mapped to mandsaurgallary1..6
   mandsaurgallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777170/mandsaurgallary1_p10i0q.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mandsaurgallary1_p10i0q.jpg",
   mandsaurgallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777172/mandsaurgallary2_wgtcbq.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mandsaurgallary2_wgtcbq.jpg",
   mandsaurgallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777175/mandsaurgallary3_l0toft.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mandsaurgallary3_l0toft.jpg",
   mandsaurgallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777177/mandsaurgallary4_giy7v9.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mandsaurgallary4_giy7v9.jpg",
   mandsaurgallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777181/mandsaurgallary5_aoy2xc.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mandsaurgallary5_aoy2xc.jpg",
   mandsaurgallary6:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781777183/mandsaurgallary6_mk7jck.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mandsaurgallary6_mk7jck.jpg",
 };
 
 const mandsaur: DestinationContent = {

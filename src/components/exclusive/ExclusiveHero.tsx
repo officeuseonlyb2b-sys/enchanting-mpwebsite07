@@ -3,9 +3,9 @@ import type { SawanCampaign } from "@/data/exclusive/sawanData";
 
 
 const mahakalImage =
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/f_auto,q_auto/v1781588482/mahakal-image_isjlof.webp";
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/mahakal-image_isjlof.webp";
 
-const mobileHeroImage = "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607217/home-mobile_ce44gg.png"
+const mobileHeroImage = "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/home-mobile_ce44gg.png"
 
 interface Props {
   hero: SawanCampaign["hero"];

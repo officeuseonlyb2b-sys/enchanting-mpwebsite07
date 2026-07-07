@@ -4,25 +4,25 @@ import type { DestinationContent } from "./types";
 const images = {
   // Attraction images – mapped to tamiaattraction1..4
   tamiaattraction1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781546/tamiaattraction1_vlqqsi.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/tamiaattraction1_vlqqsi.jpg",
   tamiaattraction2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781550/tamiaattraction2_pzbxzx.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/tamiaattraction2_pzbxzx.jpg",
   tamiaattraction3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781554/tamiaattraction3_r19eqv.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/tamiaattraction3_r19eqv.jpg",
   tamiaattraction4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781557/tamiaattraction4_qdniqq.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/tamiaattraction4_qdniqq.jpg",
 
   // Gallery images – mapped to tamiagallary1..5
   tamiagallary1:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781561/tamiagallary1_gsr0rj.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/tamiagallary1_gsr0rj.jpg",
   tamiagallary2:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781565/tamiagallary2_e7vfe8.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/tamiagallary2_e7vfe8.jpg",
   tamiagallary3:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781569/tamiagallary3_shdvnq.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/tamiagallary3_shdvnq.jpg",
   tamiagallary4:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781573/tamiagallary4_as20lv.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/tamiagallary4_as20lv.jpg",
   tamiagallary5:
-    "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781781577/tamiagallary5_zrcyj1.jpg",
+    "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/tamiagallary5_zrcyj1.jpg",
 };
 
 const tamia: DestinationContent = {

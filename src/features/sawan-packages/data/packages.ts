@@ -3,29 +3,29 @@ import type { SawanPackage } from "../types";
 // Cloudinary Images
 
 const helicopter1 =
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607211/helicopter1_hfgdle.webp";
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/helicopter1_hfgdle.webp";
 
 const helicopter2 =
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607212/helicopter2_eoxpte.webp";
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/helicopter2_eoxpte.webp";
 
 const helicopter3 =
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607213/helicopter3_csh8it.webp";
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/helicopter3_csh8it.webp";
 
 const helicopter4 =
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607213/helicopter4_pfqvbv.webp";
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/helicopter4_pfqvbv.webp";
 
 const helicopter5 =
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607214/helicopter5_lhdn2k.webp";
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/helicopter5_lhdn2k.webp";
 
 
 const normalpkg1 =
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607215/normalpkg1_ymmkxt.webp";
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/normalpkg1_ymmkxt.webp";
 
 const normalpkg2 =
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607216/normalpkg2_euryf8.webp";
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/normalpkg2_euryf8.webp";
 
 const normalpkg3 =
-  "https://res.cloudinary.com/dfyuf0bjl/image/upload/v1781607216/normalpkg3_s6q6j4.webp";
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images/normalpkg3_s6q6j4.webp";
 
 
 const COMMON_EXCLUSIONS = [
