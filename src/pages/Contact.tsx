@@ -12,6 +12,8 @@ const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", phone: "", subject: "", message: "" });
+  // Honeypot — hidden from real users, bots tend to fill it in
+  const honeypotRef = useRef<HTMLInputElement>(null);
   const upd = (k: string, v: string) => setForm((p) => ({ ...p, [k]: v }));
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -24,6 +26,7 @@ const Contact = () => {
       email: form.email,
       phone: form.phone,
       message: form.message,
+      website: honeypotRef.current?.value || "",
       extraFields: { Subject: form.subject },
     });
     setLoading(false);
@@ -33,6 +36,7 @@ const Contact = () => {
       setTimeout(() => setSubmitted(false), 4000);
     }
   };
+
 
   return (
     <div className="min-h-screen">
