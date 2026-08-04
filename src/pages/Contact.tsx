@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { MapPin, Phone, Mail, Send, Clock, Instagram, Facebook, Twitter } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -12,6 +12,8 @@ const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", phone: "", subject: "", message: "" });
+  // Honeypot — hidden from real users, bots tend to fill it in
+  const honeypotRef = useRef<HTMLInputElement>(null);
   const upd = (k: string, v: string) => setForm((p) => ({ ...p, [k]: v }));
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -24,6 +26,7 @@ const Contact = () => {
       email: form.email,
       phone: form.phone,
       message: form.message,
+      website: honeypotRef.current?.value || "",
       extraFields: { Subject: form.subject },
     });
     setLoading(false);
@@ -33,6 +36,7 @@ const Contact = () => {
       setTimeout(() => setSubmitted(false), 4000);
     }
   };
+
 
   return (
     <div className="min-h-screen">
@@ -67,6 +71,17 @@ const Contact = () => {
             <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
               <h2 className="text-2xl font-display font-bold text-foreground mb-6">Send a Message</h2>
               <form onSubmit={handleSubmit} className="space-y-4">
+                {/* Honeypot: hidden from users and screen readers, bots fill it */}
+                <input
+                  ref={honeypotRef}
+                  type="text"
+                  name="website"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  className="hidden"
+                />
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="input-glow bg-muted/50 rounded-xl px-4 py-3 border border-transparent">
                     <input value={form.name} onChange={(e) => upd("name", e.target.value)} placeholder="Your Name" className="bg-transparent outline-none w-full text-sm text-foreground placeholder:text-muted-foreground" required />

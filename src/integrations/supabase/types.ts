@@ -101,6 +101,48 @@ export type Database = {
         }
         Relationships: []
       }
+      form_submission_log: {
+        Row: {
+          created_at: string
+          email: string | null
+          form_name: string
+          full_name: string | null
+          id: string
+          ip_address: string | null
+          message_hash: string | null
+          metadata: Json | null
+          phone: string | null
+          reason: string | null
+          status: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          form_name: string
+          full_name?: string | null
+          id?: string
+          ip_address?: string | null
+          message_hash?: string | null
+          metadata?: Json | null
+          phone?: string | null
+          reason?: string | null
+          status: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          form_name?: string
+          full_name?: string | null
+          id?: string
+          ip_address?: string | null
+          message_hash?: string | null
+          metadata?: Json | null
+          phone?: string | null
+          reason?: string | null
+          status?: string
+        }
+        Relationships: []
+      }
       suppressed_emails: {
         Row: {
           created_at: string

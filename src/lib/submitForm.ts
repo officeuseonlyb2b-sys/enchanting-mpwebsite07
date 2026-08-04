@@ -1,16 +1,17 @@
 import { z } from "zod";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import { getTurnstileToken } from "@/lib/turnstile";
 
 /**
  * Global form submission helper.
  *
- * Sends:
+ * All submissions go through the `submit-form` edge function, which runs the
+ * full anti-spam suite server-side (Turnstile, honeypot, timing, name/email/
+ * phone/message validation, duplicate detection, rate limiting, logging) and
+ * then triggers the unchanged email flow:
  *  1. Internal notification to info@enchantingmp.com
- *  2. Branded auto-reply to the user (if email provided)
- *
- * Used by every form on the site (Contact, QuoteModal, FloatingButtons,
- * GetBestQuoteModal, footer, popups, etc.) — no code duplication.
+ *  2. Branded auto-reply to the user
  */
 
 export interface FormSubmission {
@@ -27,6 +28,8 @@ export interface FormSubmission {
   extraFields?: Record<string, string | undefined>;
   /** Optional override for the user auto-reply template (defaults to 'inquiry-auto-reply'). */
   autoReplyTemplate?: string;
+  /** Honeypot value — must stay empty. Populated automatically by forms that render it. */
+  website?: string;
 }
 
 const baseSchema = z.object({
@@ -44,6 +47,9 @@ const baseSchema = z.object({
 // Simple client-side rapid-submit guard (per form name)
 const lastSubmitAt = new Map<string, number>();
 const RATE_LIMIT_MS = 4000;
+
+// Timestamp of when the page (and therefore the forms on it) loaded.
+const pageLoadedAt = Date.now();
 
 // Meta Pixel: dedupe Lead events per submission
 const firedLeadEvents = new Set<string>();
@@ -69,6 +75,11 @@ function trackMetaLead(dedupeKey: string) {
 export async function submitForm(
   data: FormSubmission
 ): Promise<{ ok: boolean; error?: string }> {
+  // Honeypot — bots fill hidden fields, humans never do
+  if (data.website && data.website.trim().length > 0) {
+    return { ok: false, error: "Submission blocked." };
+  }
+
   // Validation
   const parsed = baseSchema.safeParse(data);
   if (!parsed.success) {
@@ -94,47 +105,56 @@ export async function submitForm(
     Object.entries(data.extraFields ?? {}).filter(([, v]) => v && v.trim().length)
   ) as Record<string, string>;
 
-  const baseData = {
-    formName: data.formName,
-    fullName: data.fullName.trim(),
-    email: data.email.trim(),
-    phone: data.phone?.trim() || undefined,
-    destination: data.destination?.trim() || undefined,
-    packageName: data.packageName?.trim() || undefined,
-    travelDate: data.travelDate?.trim() || undefined,
-    travelers: data.travelers?.trim() || undefined,
-    message: data.message?.trim() || undefined,
-    submittedAt,
-    pageUrl: typeof window !== "undefined" ? window.location.href : undefined,
-    extraFields: cleanExtras,
-  };
-
   const idempotencyBase = `${data.formName}-${data.email}-${now}`;
 
   try {
-    // 1. Internal notification (template has fixed `to: info@enchantingmp.com`)
-    const { error: notifyError } = await supabase.functions.invoke(
-      "send-transactional-email",
-      {
-        body: {
-          templateName: "inquiry-notification",
-          recipientEmail: "info@enchantingmp.com",
-          idempotencyKey: `notify-${idempotencyBase}`,
-          templateData: baseData,
-        },
-      }
-    );
-    if (notifyError) throw notifyError;
+    const turnstileToken = await getTurnstileToken();
 
-    // 2. Auto-reply to the user
-    await supabase.functions.invoke("send-transactional-email", {
+    const { data: result, error } = await supabase.functions.invoke("submit-form", {
       body: {
-        templateName: data.autoReplyTemplate || "inquiry-auto-reply",
-        recipientEmail: baseData.email,
-        idempotencyKey: `reply-${idempotencyBase}`,
-        templateData: { fullName: baseData.fullName, formName: baseData.formName },
+        formName: data.formName,
+        fullName: data.fullName.trim(),
+        email: data.email.trim(),
+        phone: data.phone?.trim() || undefined,
+        destination: data.destination?.trim() || undefined,
+        packageName: data.packageName?.trim() || undefined,
+        travelDate: data.travelDate?.trim() || undefined,
+        travelers: data.travelers?.trim() || undefined,
+        message: data.message?.trim() || undefined,
+        submittedAt,
+        pageUrl: typeof window !== "undefined" ? window.location.href : undefined,
+        extraFields: cleanExtras,
+        idempotencyBase,
+        autoReplyTemplate: data.autoReplyTemplate,
+        website: data.website ?? "",
+        elapsedMs: now - pageLoadedAt,
+        turnstileToken,
       },
     });
+
+    // Non-2xx responses surface as FunctionsHttpError; read the server reason.
+    if (error) {
+      let serverMessage = "";
+      const ctx = (error as { context?: Response }).context;
+      if (ctx && typeof ctx.json === "function") {
+        try {
+          const payload = await ctx.json();
+          serverMessage = payload?.error || "";
+        } catch {
+          /* ignore */
+        }
+      }
+      lastSubmitAt.delete(data.formName);
+      return {
+        ok: false,
+        error: serverMessage || "Something went wrong. Please try again.",
+      };
+    }
+
+    if (!result?.ok) {
+      lastSubmitAt.delete(data.formName);
+      return { ok: false, error: result?.error || "Something went wrong. Please try again." };
+    }
 
     // Meta Pixel Lead event — fired only after a successful submission
     trackMetaLead(idempotencyBase);
