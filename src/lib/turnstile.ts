@@ -8,7 +8,9 @@
  */
 
 export const TURNSTILE_SITE_KEY: string =
-  (import.meta.env.VITE_TURNSTILE_SITE_KEY as string | undefined) || "";
+  (import.meta.env.VITE_TURNSTILE_SITE_KEY as string | undefined) ||
+  "0x4AAAAAAEGJcf275TIUNq7S";
+
 
 const SCRIPT_SRC =
   "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
