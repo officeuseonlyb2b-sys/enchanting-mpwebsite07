@@ -12,13 +12,15 @@
  */
 import type { PackageData } from "./types";
 import { ujjainPackages } from "./ujjain";
+import { durgaPoojaPackages } from "./durga-pooja";
 
 /** All manually-curated packages, in display order. */
 export const manualPackages: PackageData[] = [
   ...ujjainPackages,
+  ...durgaPoojaPackages,
   // ...pachmarhiPackages,
   // ...bhopalPackages,
 ];
 
 export type { PackageData };
-export { ujjainPackages };
+export { ujjainPackages, durgaPoojaPackages };
