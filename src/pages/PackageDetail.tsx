@@ -176,7 +176,42 @@ const PackageDetail = () => {
                   </ul>
                 </div>
               </motion.div>
+
+              {/* Pricing slabs (operator-supplied, per-pax) */}
+              {pkg.paxPricing && pkg.paxPricing.length > 0 && (
+                <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.35 }}>
+                  <h2 className="text-2xl font-display font-bold text-foreground mb-4">Pricing</h2>
+                  <div className="overflow-x-auto rounded-2xl border border-border/50 bg-card shadow-[var(--shadow-card)]">
+                    <table className="w-full min-w-[420px] text-sm">
+                      <thead>
+                        <tr className="bg-muted/40 text-left">
+                          <th className="px-5 py-3 font-semibold text-foreground">Occupancy</th>
+                          <th className="px-5 py-3 font-semibold text-foreground">Vehicle</th>
+                          <th className="px-5 py-3 font-semibold text-foreground text-right">Per Person</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {pkg.paxPricing.map((row) => (
+                          <tr key={`${row.pax}-${row.vehicle}`} className="border-t border-border/40">
+                            <td className="px-5 py-3 text-foreground">{row.pax}</td>
+                            <td className="px-5 py-3 text-muted-foreground">{row.vehicle}</td>
+                            <td className="px-5 py-3 text-right font-semibold text-foreground">₹{row.price.toLocaleString()}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                  {(pkg.programCategory || pkg.validity) && (
+                    <p className="text-xs text-muted-foreground mt-3">
+                      {pkg.programCategory}
+                      {pkg.programCategory && pkg.validity ? " · " : ""}
+                      {pkg.validity ? `Travel validity: ${pkg.validity}` : ""}
+                    </p>
+                  )}
+                </motion.div>
+              )}
             </div>
+
 
             {/* Right Column - Pricing Card */}
             <div>

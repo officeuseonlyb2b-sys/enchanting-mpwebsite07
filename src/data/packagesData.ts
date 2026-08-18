@@ -122,6 +122,14 @@ export interface PackageData {
   featured?: boolean;
   /** Marked as a current promotional offer */
   offer?: boolean;
+  /** Operator program the package belongs to (e.g. "Durga Pooja Exclusive") */
+  programCategory?: string;
+  /** Travel validity window as supplied by the operator (e.g. "Aug to Oct") */
+  validity?: string;
+  /** All interest categories the package covers */
+  categories?: string[];
+  /** Per-pax pricing slabs (vehicle + occupancy based) */
+  paxPricing?: { pax: string; vehicle: string; price: number }[];
 }
 
 /* ─────────────────────────────────────────────────────────────

@@ -41,6 +41,9 @@ const getPackageMonths = (pkg: PackageData): string[] => {
   ];
 
   // Seasonal tours
+  if (pkg.tourCategory === "Durga Pooja Exclusive") {
+    return ["August", "September", "October"];
+  }
   if (pkg.tourCategory === "Monsoon Exclusive") {
     return ["July", "August", "September"];
   }
@@ -1138,7 +1141,7 @@ const tourCategoryChildren: Record<string, string[]> = {
     "Honeymoon Tours",
     "Narmada Parikrama",
   ],
-  "Seasonal Tours": ["Monsoon Exclusive", "Summer", "Winter"],
+  "Seasonal Tours": ["Monsoon Exclusive", "Durga Pooja Exclusive", "Summer", "Winter"],
 };
 
 export default Packages;
