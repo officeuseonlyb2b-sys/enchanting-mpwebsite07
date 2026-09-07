@@ -580,14 +580,13 @@ const PriceRangeSlider = ({
 // --------------------------------------------
 const PackageCard = ({ pkg, index }: { pkg: PackageData; index: number }) => {
   const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-50px" });
 
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 50 }}
-      animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ delay: index * 0.1, duration: 0.5 }}
+      initial={false}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
     >
       <motion.div
         whileHover={{ y: -10 }}
@@ -679,6 +678,13 @@ const Packages = () => {
   const [priceRange, setPriceRange] = useState<[number, number]>([0, 50000]);
   const [sortBy, setSortBy] = useState("default");
   const [offersOnly, setOffersOnly] = useState(false);
+
+  // -- NEW: Identify the 6 Durga Pooja Exclusive packages by tourCategory --
+  const durgaPoojaIds = useMemo(
+    () => new Set(allPackages.filter(pkg => pkg.tourCategory === "Durga Pooja Exclusive").map(pkg => pkg.id)),
+    []
+  );
+
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
   const headerRef = useRef(null);
@@ -786,15 +792,39 @@ const Packages = () => {
       return true;
     });
 
+    // ---- Sorting with Durga Pooja priority ----
     if (sortBy === "price-asc") {
-      result = [...result].sort((a, b) => a.price - b.price);
+      result = [...result].sort((a, b) => {
+        const aIsDurga = durgaPoojaIds.has(a.id);
+        const bIsDurga = durgaPoojaIds.has(b.id);
+        if (aIsDurga && !bIsDurga) return -1;
+        if (!aIsDurga && bIsDurga) return 1;
+        return a.price - b.price;
+      });
     } else if (sortBy === "price-desc") {
-      result = [...result].sort((a, b) => b.price - a.price);
+      result = [...result].sort((a, b) => {
+        const aIsDurga = durgaPoojaIds.has(a.id);
+        const bIsDurga = durgaPoojaIds.has(b.id);
+        if (aIsDurga && !bIsDurga) return -1;
+        if (!aIsDurga && bIsDurga) return 1;
+        return b.price - a.price;
+      });
+    } else {
+      // default: Durga first, then preserve original order (or you could add secondary criteria)
+      result = [...result].sort((a, b) => {
+        const aIsDurga = durgaPoojaIds.has(a.id);
+        const bIsDurga = durgaPoojaIds.has(b.id);
+        if (aIsDurga && !bIsDurga) return -1;
+        if (!aIsDurga && bIsDurga) return 1;
+        return 0;
+      });
     }
+
     return result;
   }, [
     tourCategory, tourSubCategory, selectedDestinations, durationRange,
     selectedMonths, selectedInterests, priceRange, offersOnly, sortBy,
+    durgaPoojaIds,
   ]);
 
   const isPriceActive = priceRange[0] > minPrice || priceRange[1] < maxPrice;
@@ -1032,13 +1062,13 @@ const Packages = () => {
       </section>
 
       {/* Filter Section */}
-      <section className="container mx-auto px-4 relative z-20">
+      <section className="container mx-auto px-4 relative z-20 -mt-1 md:-mt-2">
         {/* Desktop — fixed overflow for calendar popup */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="hidden md:block sticky top-24 relative overflow-visible rounded-2xl border border-amber-200/40 shadow-[0_10px_40px_rgba(0,0,0,0.06)]"
+          className="hidden md:block relative overflow-visible rounded-2xl border border-amber-200/40 shadow-[0_10px_40px_rgba(0,0,0,0.06)]"
         >
           <div className="absolute inset-0 bg-white/85 backdrop-blur-xl rounded-2xl" />
           {/* subtle heritage motif corners */}
@@ -1098,7 +1128,7 @@ const Packages = () => {
       </section>
 
       {/* Packages Grid */}
-      <section className="container mx-auto px-4 py-16">
+      <section className="container mx-auto px-4 pt-6 md:pt-8 pb-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filtered.map((pkg, i) => (
             <PackageCard key={pkg.id} pkg={pkg} index={i} />
