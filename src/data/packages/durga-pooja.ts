@@ -3,12 +3,9 @@
  * Source: Durga_Pooja_Exclusive_program.xlsx
  */
 import type { PackageData } from "./types";
-import ancientMadhyaPradesh from "@/assets/package-banners/ancient-madhya-pradesh.webp.asset.json";
-import essenceOfMadhyaPradesh from "@/assets/package-banners/essence-of-madhya-pradesh.webp.asset.json";
-import historicalSagaOfMadhyaPradesh from "@/assets/package-banners/historical-saga-of-madhya-pradesh.webp.asset.json";
-import excitingMadhyaPradesh from "@/assets/package-banners/exciting-madhya-pradesh.webp.asset.json";
-import kingdomOfMahakal from "@/assets/package-banners/kingdom-of-mahakal.webp.asset.json";
-import thrillingMadhyaPradesh from "@/assets/package-banners/thrilling-madhya-pradesh.webp.asset.json";
+
+const PACKAGE_MEDIA_URL =
+  "https://mtctadcawavnibzrhkin.supabase.co/storage/v1/object/public/media/images%2Fpackages";
 
 export const durgaPoojaPackages: PackageData[] = [
   {
@@ -25,7 +22,7 @@ export const durgaPoojaPackages: PackageData[] = [
     programCategory: "Durga Pooja Exclusive",
     validity: "Oct to 10 Nov",
     categories: ["Heritage", "Spiritual"],
-    image: ancientMadhyaPradesh.url,
+    image: `${PACKAGE_MEDIA_URL}/ancient-madhya-pradesh.webp`,
     highlights: [
       "Discover Gwalior's enduring glory as the 'Pearl Among the Fortresses of Hind.'",
       "Encounter spiritual transcendence amidst the majestic Jain statues of Siddhanchal and Parvat.",
@@ -148,7 +145,7 @@ export const durgaPoojaPackages: PackageData[] = [
     programCategory: "Durga Pooja Exclusive",
     validity: "Oct to 10 Nov",
     categories: ["Heritage", "Spiritual", "Wildlife & Nature"],
-    image: essenceOfMadhyaPradesh.url,
+    image: `${PACKAGE_MEDIA_URL}/essence-of-madhya-pradesh.webp`,
     highlights: [
       "Discover Gwalior's enduring glory as the 'Pearl Among the Fortresses of Hind.'",
       "Encounter spiritual transcendence amidst the majestic Jain statues of Siddhanchal and Parvat.",
@@ -260,7 +257,7 @@ export const durgaPoojaPackages: PackageData[] = [
     programCategory: "Durga Pooja Exclusive",
     validity: "Oct to 10 Nov",
     categories: ["Heritage", "Spiritual"],
-    image: historicalSagaOfMadhyaPradesh.url,
+    image: `${PACKAGE_MEDIA_URL}/historical-saga-of-madhya-pradesh.webp`,
     highlights: [
       "Discover Gwalior's enduring glory as the 'Pearl Among the Fortresses of Hind.'",
       "Encounter spiritual transcendence amidst the majestic Jain statues of Siddhanchal and Parvat.",
@@ -401,7 +398,7 @@ export const durgaPoojaPackages: PackageData[] = [
     programCategory: "Durga Pooja Exclusive",
     validity: "Oct to 10 Nov",
     categories: ["Heritage", "Spiritual"],
-    image: excitingMadhyaPradesh.url,
+    image: `${PACKAGE_MEDIA_URL}/exciting-madhya-pradesh.webp`,
     highlights: [
       "Bhopal: Where ancient history meets modern charm amidst the tranquil lakes, vibrant culture, and culinary delights of the City of Lakes.",
       "Sanchi Stupa: Timeless marvel of Buddhist grandeur, a symbol of serenity and architectural brilliance, captivating travelers with its spiritual aura.",
@@ -501,7 +498,7 @@ export const durgaPoojaPackages: PackageData[] = [
     programCategory: "Durga Pooja Exclusive",
     validity: "Oct to 10 Nov",
     categories: ["Heritage", "Spiritual"],
-    image: kingdomOfMahakal.url,
+    image: `${PACKAGE_MEDIA_URL}/kingdom-of-mahakal.webp`,
     highlights: [
       "The Kingdom of Mahakaal, where ancient spirituality reigns supreme, beckoning travelers with its sacred shrines and mystical allure.",
       "Harsiddhi Mata Temple Aarti: A mesmerizing spectacle of devotion and reverence, illuminating hearts with the divine energy of the sacred ritual.",
@@ -585,7 +582,7 @@ export const durgaPoojaPackages: PackageData[] = [
     programCategory: "Durga Pooja Exclusive",
     validity: "Oct to 10 Nov",
     categories: ["Heritage", "Spiritual", "Wildlife & Nature"],
-    image: thrillingMadhyaPradesh.url,
+    image: `${PACKAGE_MEDIA_URL}/thrilling-madhya-pradesh.webp`,
     highlights: [
       "Pachmarhi: The Queen of Satpura, where waterfalls, ancient caves, and panoramic vistas create a magical hill station escape.",
       "Bhimbetka Rock Shelters: Ancient cave art unveiling humanity's earliest creativity, a mesmerizing journey through time.",
