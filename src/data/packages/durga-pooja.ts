@@ -460,20 +460,34 @@ export const durgaPoojaPackages: PackageData[] = [
       },
     ],
     included: [
-      "Meeting and assistance on arrival/departure at Airport/hotel by our representative.",
-      "Accommodation and Meals",
-      "▪ In Bhopal: Includes with Breakfast",
-      "▪ In Ujjain: Includes with Breakfast",
-      "▪ In Maheswhar: Includes with (Breakfast & Dinner)",
-      "▪ In Mandu: Includes with Breakfast",
-      "▪ In Indore: Includes with Breakfast",
-      "o Meals Included:",
-      "▪ 06 Breakfasts",
-      "▪ 01 Dinner",
-      "✓ Transfers and Travel: Arrival/departure transfers, sightseeing, and travel by air-conditioned vehicle as per itinerary.",
-      "✓ In-Vehicle Amenities: 2 Water Bottles (250 ml) Per Person Per Day, Tissues, Hand Sanitizers & masks.",
-      "✓ Taxes: 5% GST Aplicable on Total Bill.",
-    ],
+  "Meeting and assistance on arrival/departure at Airport/hotel by our representative.",
+
+  "Accommodation and Meals",
+
+  "▪ In Bhopal: Includes with Breakfast",
+
+  "▪ In Ujjain: Includes with Breakfast",
+
+  "▪ In Maheswhar: Includes with (Breakfast & Dinner)",
+
+  "▪ In Mandu: Includes with Breakfast",
+
+  "▪ In Indore: Includes with Breakfast",
+
+  "o Meals Included:",
+
+  "▪ 06 Breakfasts",
+
+  "▪ 01 Dinner",
+
+  "✓ Transfers and Travel: Arrival/departure transfers, sightseeing, and travel by air-conditioned vehicle as per itinerary.",
+
+  "✓ In-Vehicle Amenities: 2 Water Bottles (250 ml) Per Person Per Day, Tissues, Hand Sanitizers & masks.",
+
+  "✓ Taxes: 5% GST Aplicable on Total Bill.",
+
+  "✓ Driver Allowance & Parking Charges Included.",
+],
     excluded: [
       "Any services other than the ones mentioned above or air fares, train or flight tickets, guides, entrances fee, activities, meals other than those mentioned above or any items of Personal nature like, telephone calls, laundry, drinks, Camera fees or tips etc.",
     ],
@@ -544,19 +558,32 @@ export const durgaPoojaPackages: PackageData[] = [
       },
     ],
     included: [
-      "Meeting and assistance on arrival/departure at Airport/hotel by our representative or driver.",
-      "✓ Accommodation and Meals",
-      "▪ In Ujjain: Includes with Breakfast",
-      "▪ In Maheswhar: Includes with (Breakfast & Dinner)",
-      "▪ In Mandu: Includes with Breakfast",
-      "▪ In Indore: Includes with Breakfast",
-      "o Meals Included:",
-      "▪ 04 Breakfasts",
-      "▪ 01 Dinner",
-      "✓ Transfers and Travel: Arrival/departure transfers, sightseeing, and travel by air-conditioned vehicle as per itinerary.",
-      "✓ In-Vehicle Amenities: 2 Water Bottles (250 ml) Per Person Per Day, Tissues, Hand Sanitizers & masks.",
-      "✓ Taxes: 5% GST Applicable on Total Bill.",
-    ],
+  "Meeting and assistance on arrival/departure at Airport/hotel by our representative or driver.",
+
+  "✓ Accommodation and Meals",
+
+  "▪ In Ujjain: Includes with Breakfast",
+
+  "▪ In Maheswhar: Includes with (Breakfast & Dinner)",
+
+  "▪ In Mandu: Includes with Breakfast",
+
+  "▪ In Indore: Includes with Breakfast",
+
+  "o Meals Included:",
+
+  "▪ 04 Breakfasts",
+
+  "▪ 01 Dinner",
+
+  "✓ Transfers and Travel: Arrival/departure transfers, sightseeing, and travel by air-conditioned vehicle as per itinerary.",
+
+  "✓ In-Vehicle Amenities: 2 Water Bottles (250 ml) Per Person Per Day, Tissues, Hand Sanitizers & masks.",
+
+  "✓ Taxes: 5% GST Applicable on Total Bill.",
+
+  "✓ Driver Allowance & Parking Charges Included.",
+],
     excluded: [
       "Any services other than the ones mentioned above or air fares, train or flight tickets, guides, entrances fee, activities, meals other than those mentioned above or any items of Personal nature like, telephone calls, laundry, drinks, Camera fees or tips etc.",
     ],
